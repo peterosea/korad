@@ -1,0 +1,406 @@
+.content_section.marble_wrap {
+    background-color: #bce9e6;
+    .section_inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .title_wrap {
+        margin:110px 0 70px;
+        ._description {
+            line-height: 1.6em;
+            text-align: center;
+            color: #401ba2;
+        }
+    }
+    .marble {
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 5px;
+        margin-bottom: 120px;
+        position: relative;
+        .mobile.warning {
+            h3 {
+                text-align: center;
+            }
+        }
+        #marker {
+            position: absolute;
+            top:-10px;
+            left:20px;
+            z-index: 9;
+            transition: all 0.3s;
+        }
+        // 마블 보드게임 영역
+        .board {
+            border-collapse: separate;
+            border-spacing: 3px;
+            td {
+                border-radius: 5px;
+                width: 195px;
+                height: 146px;
+                text-align: center;
+                position: relative;
+                background-position: center 40px;
+                background-repeat: no-repeat;
+                background-size: auto;
+                .popup {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    z-index: 9;
+                    top: 0;
+                    left: 0;
+                }
+                .btn_dice_wrap {
+                    display: flex;
+                    justify-content: center;
+                    align-items:center;
+                    border-radius: 20px;
+                    background-color: #303030;
+                    box-shadow: 0 15px 0 rgba(0, 0, 0, 0.5);
+                    width: 304px;
+                    height: 148px;
+                    margin: 0 auto;
+                    cursor: pointer;
+                    transition:all 0.2s;
+                    .img_dice {
+                        margin-right: 20px;
+                    }
+                    .dice_txt {
+                        color: #fff;
+                        font-size: 34px;
+                        font-weight: bold;
+                        line-height: 1.2em;
+                    }
+                    &:hover {
+                        background-color: $colorAcc;
+                        box-shadow: 0 15px 0 rgba(64, 27, 162, 0.5);
+                    }
+                    &:active {
+                        margin-top: 15px;
+                        box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+                    }
+                }
+                &.dice_blank {
+                    width: auto;
+                    height: auto;
+                }
+                &.start {
+                    background-color: #ffba00;
+                }
+                ._txt {
+                    font-weight: bold;
+                    font-size: 18px;
+                    position: absolute;
+                    bottom: 23px;
+                    display: block;
+                    text-align: center;
+                    width: 100%;
+                    z-index: 1;
+                }
+                ._start {
+                    width: 115px;
+                    height: 116px;
+                    background-color: #e75b93;
+                    border-radius: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 26px;
+                    font-weight: bold;
+                    line-height: 1;
+                    color: #fff101;
+                    margin: 0 auto;
+                }
+                &.step01 {
+                    background-color: #8066CC;
+                    ._image {
+                        margin-top: -60px;
+                    }
+                    ._txt {
+                        color: #fff;
+                    }
+                }
+                &.step02 {
+                    background-color:rgba(11, 138, 72, 0.2);
+                    background-image: url(#{$urlImg}/marble_num01.png);
+                    ._image {
+                        margin-top: -70px;
+                    }
+                }
+                &.step03 {
+                    background-color:rgba(11, 138, 72, 0.3);
+                    background-image: url(#{$urlImg}/marble_num02.png);
+                }
+                &.step04 {
+                    background-color:rgba(11, 138, 72, 0.4);
+                    background-image: url(#{$urlImg}/marble_num03.png);
+                }
+                &.step05 {
+                    background-color:rgba(11, 138, 72, 0.5);
+                    background-image: url(#{$urlImg}/marble_num04.png);
+                }
+                &.step06 {
+                    background-color:rgba(11, 138, 72, 0.6);
+                    background-image: url(#{$urlImg}/marble_num05.png);
+                    ._txt {
+                        color: #fff;
+                    }
+                }
+                &.step07 {
+                    background-color:rgba(11, 138, 72, 0.8);
+                    background-image: url(#{$urlImg}/marble_num06.png);
+                    ._txt {
+                        color: #fff;
+                    }
+                }
+                &.step08 {
+                    background-color:rgba(11, 138, 72, 1);
+                    background-image: url(#{$urlImg}/marble_num07.png);
+                    ._image {
+                        margin-top: -85px;
+                    }
+                    ._txt {
+                        color: #fff;
+                    }
+                }
+                &.step09 {
+                    width: auto;
+                    background-color:#0084e6;
+                    background-image: url(#{$urlImg}/marble-pattern-01.png);
+                    background-position: center center;
+                    background-repeat: repeat;
+                    ._txt {
+                        color: #fff;
+                        position: relative;
+                        bottom: auto;
+                    }
+                }
+                &.step10 {
+                    background-color: #e75b93;
+                    ._image {
+                        margin-top: -80px;
+                    }
+                    ._txt {
+                        color:#fff;
+                    }
+                }
+                &.step11 {
+                    background-color: #a0a0a0;
+                    ._image {
+                        margin-top: -80px;
+                    }
+                    ._txt {
+                        color:#fff;
+                    }
+                }
+                &.step12 {
+                    height: auto;
+                    background-image: url(#{$urlImg}/marble-pattern-01.png);
+                    background-color: #1dccea;
+                    background-position: center center;
+                    background-repeat: repeat;
+                    ._txt {
+                        color:#fff;
+                        position: relative;
+                        bottom: auto;
+                        margin-top: 20px;
+                    }
+                }
+                &.step13 {
+                    background-color: #dfd7c8;
+                    ._image {
+                        margin-top: -60px;
+                    }
+                }
+            }
+            // 3D입체 주사위
+            .dice {
+                $diceWidth: 100px;
+                $diceRadius: 15px;
+                $dotPos: 12px;
+
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                opacity: 0;
+                visibility: hidden;
+                top: 0;
+                left: 0;
+                .box_shadow {
+                    width: 94px;
+                    height: 94px;
+                    position: absolute;
+                    transform-style: preserve-3d;
+                    transition: all 2s;
+                    padding: 0;
+                    background-color: rgba(0,0,0,0.3);
+                    z-index: 2;
+                    box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);
+                    left: 10px;
+                    top: calc(50% - 30px);
+                    border-radius: $diceRadius;
+                }
+
+                ////////// 주사위
+                h1 {
+                    font-family: Arial, Helvetica, sans-serif;
+                    text-align: center;
+                }
+
+                #cube {
+                    width: 100px;
+                    height: 100px;
+                    position: absolute;
+                    transform-style: preserve-3d;
+                    padding: 0;
+                    z-index: 8;
+                    left:0;
+                    top: calc(50% - 50px);
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    div {
+                        background: #fff;
+                        display: block;
+                        position: absolute;
+                        width: $diceWidth;
+                        height: $diceWidth;
+                        margin: 0 auto;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 500%;
+                        text-align: center;
+                        border-radius: $diceRadius;
+                        box-shadow:inset 0 0 20px #ccc;
+                        z-index: 9;
+                        &.inner {
+                            background-color: #dddddd;
+                            z-index: 7;
+                        }
+                    }
+                    .side {
+                        transition:all 0.3s;
+                    }
+
+                    .front {
+                        transform: translateZ(50px);
+                        &.inner {
+                            transform:translateZ(50px);
+                        }
+                    }
+                    .back {
+                        transform: rotateX(-180deg) translateZ(50px);
+                        &.inner {
+                            transform: rotateX(-180deg) translateZ(50px);
+                        }
+                    }
+                    .right {
+                        transform: rotateY(90deg) translateZ(50px);
+                        &.inner {
+                            transform: rotateX(90deg) translateZ(50px);
+                        }
+                    }
+                    .left {
+                        transform: rotateY(-90deg) translateZ(50px);
+                        &.inner {
+                            transform: rotateX(-90deg) translateZ(50px);
+                        }
+                    }
+                    .top {
+                        transform: rotateX(90deg) translateZ(50px);
+                        &.inner {
+                            transform: rotateX(90deg) translateZ(50px);
+                        }
+                    }
+                    .bottom {
+                        transform: rotateX(-90deg) translateZ(50px);
+                        &.inner {
+                            transform: rotateX(-90deg) translateZ(50px);
+                        }
+                    }
+                    &.finish {
+                        pointer-events: unset;
+                        cursor: initial;
+                    }
+                }
+
+                .dot {
+                    display: block;
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    background: #555;
+                    box-shadow: 0px 0px 5px 5px inset rgba(0,0,0,0.3);
+                    border-radius: 50px;
+                }
+
+                .front .dot1 {
+                    top: calc(50% - #{$dotPos});
+                    left: calc(50% - #{$dotPos});
+                }
+                .back {
+                    .dot1 {
+                        top: calc(30% - #{$dotPos});
+                        left: calc(30% - #{$dotPos});
+                    }
+                    .dot2 {
+                        top: calc(50% - #{$dotPos});
+                        left: calc(50% - #{$dotPos});
+                    }
+                    .dot3 {
+                        top: calc(70% - #{$dotPos});
+                        left: calc(70% - #{$dotPos});
+                    }
+                }
+
+                .right {
+                    .dot1 {
+                        top: calc(35% - #{$dotPos});
+                        left: calc(35% - #{$dotPos});
+                    }
+                    .dot2 {
+                        top: calc(65% - #{$dotPos});
+                        left: calc(65% - #{$dotPos});
+                    }
+                }
+
+                .left {
+                    .dot1 {
+                        top: calc(35% - #{$dotPos});
+                        left: calc(35% - #{$dotPos});
+                    }
+                    .dot2 {
+                        top: calc(65% - #{$dotPos});
+                        left: calc(65% - #{$dotPos});
+                    }
+                }
+                
+                .top {
+                    .dot1 {
+                        top: calc(50% - #{$dotPos});
+                        left: calc(50% - #{$dotPos});
+                    }
+                }
+                
+                .bottom {
+                    .dot1 {
+                        top: calc(30% - #{$dotPos});
+                        left: calc(30% - #{$dotPos});
+                    }
+                    .dot2 {
+                        top: calc(50% - #{$dotPos});
+                        left: calc(50% - #{$dotPos});
+                    }
+                    .dot3 {
+                        top: calc(70% - #{$dotPos});
+                        left: calc(70% - #{$dotPos});
+                    }
+                }
+            }
+        }
+    }
+}
