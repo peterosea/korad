@@ -1549,6 +1549,13 @@
                 <!-- 퀴즈이벤트 영역 -->
                 <section class="content_section quiz_wrap">
                     <div class="section_inner">
+                        <div class="title_wrap">
+                            <img src="<?php echo $url_img; ?>/title_quiz.png" alt="퀴즈이벤트">
+                            <p class="_description">
+                            아래 제시되는 내용의 빈칸을 채워주세요.<br>
+                            코라드 M방폐장 가이드 투어 영상을 보시면 정답을 알 수 있어요.
+                            </p>
+                        </div>
                     </div>               
                 </section>
                 <!-- /.퀴즈이벤트 영역 -->
