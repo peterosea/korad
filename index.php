@@ -1548,7 +1548,8 @@
                 <!-- /.방폐마블 영역 -->
                 <!-- 퀴즈이벤트 영역 -->
                 <section class="content_section quiz_wrap">
-
+                    <div class="section_inner">
+                    </div>               
                 </section>
                 <!-- /.퀴즈이벤트 영역 -->
                 <!-- SNS공유 영역 -->
