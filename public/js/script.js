@@ -140,7 +140,7 @@ $(document).ready(function(){
     }
     /////.End 마블 보드게임
 
-    // 유튜브 슬라이더
+    ///// 유튜브 슬라이더
     $('#yeskorad_list').slick({
         centerMode: true,
         centerPadding: '600px',
@@ -177,6 +177,7 @@ $(document).ready(function(){
             }
         ]
     });
+    ///// 유튜브 슬라이더 제목표시 영역
     $('#yeskorad_nav').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
