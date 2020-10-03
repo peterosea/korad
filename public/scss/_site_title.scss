@@ -9,6 +9,9 @@ section.site_title_wrap {
         flex-direction: column;
         align-items: center;
         margin-top: 80px;
+        @include respond-to('sm'){
+            margin-top: 60px;
+        }
     }
     .title_wrap {
         display: flex;
@@ -30,6 +33,9 @@ section.site_title_wrap {
         .img_title {
             justify-content: center;
             display: flex;
+            img {
+                width: 100%;
+            }
         }
         .char_korad {
             position:absolute;
@@ -57,16 +63,32 @@ section.site_title_wrap {
         width:100%;
         max-width: 964px;
         padding:18px;
-        margin-top: 50px;
+        margin-top: -20px;
+        @include respond-to('lg'){
+            font-size: 24px;
+        }
+        @include respond-to('md'){
+            font-size: 18px;
+            padding: 18px 36px;
+        }
+        @include respond-to('sm'){
+            font-size: 15px;
+        }
     }
     .description {
         margin-top: 30px;
         text-align: center;
         font-size: 18px;
         color:$colorAcc;
+        @include respond-to('sm'){
+            font-size: 15px;
+        }
     }
     .video_wrap.youtube_wrap {
         margin-top:60px;
         margin-bottom:50px;
+        @include respond-to('md') {
+            margin-top:40px;
+        }
     }
 }

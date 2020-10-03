@@ -9,7 +9,7 @@ $colorYell: #fff101;
 // 사이트 기본 넓이 변수
 $siteWidth: 1200px;
 
-// 지마켓 웹폰트 적용
+/////// 지마켓 웹폰트 적용
 @font-face {
     font-family: 'GmarketSans';
     src: local(GmarketSansLight),
@@ -41,10 +41,51 @@ $siteWidth: 1200px;
     font-weight: bold;
 }
 
+////////////// 반응형 변수
+$breakpoints: (
+  "sm": (
+    max-width: 576px
+  ),
+  "md": (
+    max-width: 768px
+  ),
+  "lg": (
+    max-width: 992px
+  ),
+  "xl": (
+    max-width: 1280px
+  ),
+  "hg": (
+    max-width: 1400px
+  )
+);
+/// Responsive breakpoint manager
+/// @access public
+/// @param {String} $breakpoint - Breakpoint
+/// @requires $breakpoints
+@mixin respond-to($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(
+      type-of($raw-query) == "string",
+      unquote($raw-query),
+      inspect($raw-query)
+    );
+
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+			+ 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
 
 
 * {
     box-sizing: border-box;
+    word-break: keep-all;
 }
 // Smooth Scroll 이벤트
 html {
@@ -89,6 +130,8 @@ path, g {
   transition:all 0.3s;
 }
 
+
+////// 공통 Container, inner
 #content .container_inner {
     background-image: linear-gradient(to right, #18d2c4, #2499b0);
 }
@@ -101,8 +144,13 @@ path, g {
         max-width: $siteWidth;
         display: flex;
         justify-content: center;
+        @include respond-to('xl') {
+          padding-left: 40px;
+          padding-right: 40px;
+        }
     }
 }
+///////.End 공통 Container, inner
 
 .btn {
   border-radius: 10px;
@@ -131,51 +179,10 @@ path, g {
   }
 }
 
-////////////// 반응형 웹사이트
-$breakpoints: (
-  "sm": (
-    max-width: 576px
-  ),
-  "md": (
-    max-width: 768px
-  ),
-  "lg": (
-    max-width: 992px
-  ),
-  "xl": (
-    max-width: 1280px
-  ),
-  "hg": (
-    max-width: 1400px
-  )
-);
-/// Responsive breakpoint manager
-/// @access public
-/// @param {String} $breakpoint - Breakpoint
-/// @requires $breakpoints
-@mixin respond-to($breakpoint) {
-  $raw-query: map-get($breakpoints, $breakpoint);
-
-  @if $raw-query {
-    $query: if(
-      type-of($raw-query) == "string",
-      unquote($raw-query),
-      inspect($raw-query)
-    );
-
-    @media #{$query} {
-      @content;
-    }
-  } @else {
-    @error 'No value found for `#{$breakpoint}`. '
-			+ 'Please make sure it is defined in `$breakpoints` map.';
-  }
-}
-
+// 모바일/PC
 .mobile {
   display: none;
 }
-// Use
 @include respond-to('md') {
   .mobile {
     display: inherit;

@@ -6,8 +6,23 @@ footer.footer_wrap {
     align-items: center;
     padding:0 50px;
     background-color: #333333;
+    @include respond-to('xl'){
+        flex-direction: column;
+        height: 120px;
+        padding: 20px;
+    }
+    @include respond-to('lg'){
+        height: 160px;
+    }
+    @include respond-to('md'){
+        height: auto;
+    }
     .col_left {
         display: flex;
+        @include respond-to('lg'){
+            flex-direction: column;
+            align-items: center;
+        }
         .logo_footer {
             img {
                 display: block;
@@ -17,6 +32,14 @@ footer.footer_wrap {
             margin-left: 40px;
             display: flex;
             align-items: center;
+            @include respond-to('lg'){
+                margin-left: 0;
+                margin-top: 15px;
+            }
+            @include respond-to('sm'){
+                flex-direction: column;
+
+            }
             li.item {
                 font-size: 16px;
                 color: rgba(255, 255, 255, 0.4);
@@ -28,6 +51,14 @@ footer.footer_wrap {
                 &:last-child {
                     border-right:none;
                     margin-right: 0;
+                }
+                @include respond-to('md'){
+                    font-size: 13px;
+                }
+                @include respond-to('sm'){
+                    margin: 0 0 10px 0;
+                    border-right: none;
+                    padding-right: 0;
                 }
             }
         }
