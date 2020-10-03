@@ -29,9 +29,12 @@ $(document).ready(function(){
     ////////// 방폐장 맵/타임라인 스크립트
     const getPoint = document.querySelectorAll('.map_wrap ._inner .point'); //타임라인 내 포인트
     const getMapPoint = document.querySelectorAll('._map ._map_point'); //지도 내 포인트
+    const getMapLine = document.querySelectorAll('._map ._line');
+    const getMapName = document.querySelectorAll('._map .nametag');
+    const getTL = document.querySelector('._timeline ._active');
     
     // 비디오 PHP Load
-    function get_video_html(index) {
+    function getVideoHtml(index) {
         $.ajax({
             url: "/mapvideo/_video" + index + ".php",
             type: "GET",
@@ -41,19 +44,24 @@ $(document).ready(function(){
         });
     }
 
+    // 맵 타임라인 노란 배경 넓이 적용
+    function getPinPoint(index){
+        let getInnerLeft = document.querySelector('.map_wrap ._inner').getBoundingClientRect().left; //맵 Inner 위치값 구하기
+        let getPointLeft = document.querySelectorAll('.map_wrap .point .pin'); //포인트 핀 위치 구하기
+        let pinX = getPointLeft[index].getBoundingClientRect().left - getInnerLeft; //라인배경컬러 위치값 계산
+
+        getTL.style.width = pinX + 25 + 'px'; //라인배경컬러 위치값
+    }
+
     // Add Active Function
     function goTimeLine(index) {
-        const getTL = document.querySelector('._timeline ._active');
-        const getMapLine = document.querySelectorAll('._map ._line');
-        const getMapName = document.querySelectorAll('._map .nametag');
-        
 
         const k = 0;
         const l = 1;
         const m = 2;
 
         if( index == 0 ) { //첫번째일 땐 첫번째 외 나머지 모든 아이템 클래스 삭제
-            getTL.style.width = '174px';
+            // getTL.style.width = '174px';
             getPoint[l].classList.remove('active');
             getPoint[m].classList.remove('active');
             getMapPoint[l].classList.remove('active');
@@ -63,7 +71,7 @@ $(document).ready(function(){
             getMapName[l].classList.remove('active');
             getMapName[m].classList.remove('active');
         } else if ( index == 1 ) { //두번째일 땐 첫번째와 세번째 아이템 클래스 삭제
-            getTL.style.width = '605px';
+            // getTL.style.width = '605px';
             getPoint[m].classList.remove('active');
             getMapPoint[m].classList.remove('active');
             getMapLine[l].classList.remove('active');
@@ -75,7 +83,7 @@ $(document).ready(function(){
             getMapName[k].classList.add('active');
 
         } else if ( index == 2 ) { //세번째일 땐 모든 아이템 클래스 추가
-            getTL.style.width = '1035px';
+            // getTL.style.width = '1035px';
 
             getPoint[k].classList.add('active');
             getPoint[l].classList.add('active');
@@ -84,11 +92,14 @@ $(document).ready(function(){
             getMapName[k].classList.add('active');
             getMapName[l].classList.add('active');
         }
+
+        getPinPoint(index); //라인배경컬러 위치값
         getPoint[index].classList.add('active');
         getMapPoint[index].classList.add('active');
         getMapName[index].classList.add('active');
 
-        get_video_html(index);
+        // 비디오 팝업창 실행
+        getVideoHtml(index);
         $('#mapvideo_pop').modal('show');
         
     }

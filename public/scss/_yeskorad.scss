@@ -18,6 +18,15 @@
             display: inline-block;
             vertical-align: sub;
         }
+        @include respond-to('lg') {
+            width: 90%;
+            img {
+                width: 100%;
+            }
+        }
+        @include respond-to('md') {
+            margin: 70px 0 30px;
+        }
     }
     .yeskorad_list {
         width:100%;
@@ -36,6 +45,9 @@
         display: flex;
         justify-content: center;
         margin-bottom:110px;
+        @include respond-to('md') {
+            margin-bottom: 60px;
+        }
         ._inner {
             width: 700px;
         }
@@ -68,6 +80,19 @@
             }
             &.slick-next:before {
                 background-image: url(#{$urlImg}/ic_allow_right.png);
+            }
+        }
+        @include respond-to('md'){
+            ._inner {
+                width: 100%;
+            }
+            .slick-track {
+                display: flex;
+                align-items: center;
+                text-align: center;
+            }
+            .item_nav {
+                font-size: 18px;
             }
         }
     }

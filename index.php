@@ -31,12 +31,12 @@
         <header id="header" class="main_header">
             <!-- 사이트 로고 -->
             <div class="logo">
-                <a href="#"><img src="<?php echo $url_img; ?>/logo.png" alt="한국원자력환경공단"></a>
+                <a href="/"><img src="<?php echo $url_img; ?>/logo.png" alt="한국원자력환경공단"></a>
             </div>
             <!-- 메인 네비게이션 -->
             <nav class="main_nav">
                 <ul>
-                    <li class="item active">
+                    <li class="item">
                         <a href="#anchor-tour">랜선투어</a>
                     </li>
                     <li class="item">
@@ -61,9 +61,9 @@
                 <section class="content_section site_title_wrap">
                     <div class="section_inner">
                         <div class="title_wrap">
-                            <div class="mobile"><img src="<?php echo $url_img; ?>/title_sticker.png" alt="모바일"/></div>
-                            <div class="img_title"><img src="<?php echo $url_img; ?>/img_title.png" alt="코라드 M방폐장 랜선투어"/></div>
-                            <div class="char_korad"></div>
+                            <!-- <div class="mobile"><img src="<?php echo $url_img; ?>/title_sticker.png" alt="모바일"/></div> -->
+                            <div class="img_title"><img src="<?php echo $url_img; ?>/site_title_whole.png" alt="코라드 M방폐장 랜선투어"/></div>
+                            <!-- <div class="char_korad"></div> -->
                         </div>
                         <div class="welcome">코라드 M방폐장 랜선투어에 오신 여러분을 환영합니다!!</div>
                         <p class="description">
