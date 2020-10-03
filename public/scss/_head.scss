@@ -7,6 +7,11 @@ header.main_header {
     justify-content: space-between;
     background-color: #ffffff;
     box-shadow: 0px 3px 27px 0 rgba(0, 0, 0, 0.23);
+    &.fixed {
+        position: fixed;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        z-index: 99;
+    }
     .logo, ._blank {
         width:15%;
     }

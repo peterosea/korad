@@ -46,6 +46,10 @@ $siteWidth: 1200px;
 * {
     box-sizing: border-box;
 }
+// Smooth Scroll 이벤트
+html {
+  scroll-behavior: smooth;
+}
 
 html, body {
     margin:0;

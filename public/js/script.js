@@ -1,20 +1,52 @@
 ////// 제이쿼리
 $(document).ready(function(){
 
-    // 스크롤 Fix 헤더
-    window.addEventListener('scroll', function(e) {
-        var Yposition = window.scrollY;
+    // 현재 메뉴 표시
+    const getNav = document.querySelectorAll('.main_nav li.item');
+    const getNavA = document.querySelectorAll('.main_nav li.item a');
+
+    for (let i = 0; i < getNav.length; i++) {
+        getNavA[i].addEventListener('click', function(e){
+            e.preventDefault;
+            for (let j = 0; j < getNav.length; j++) {
+                getNav[j].classList.remove('active');
+            }
+            getNav[i].classList.add('active');
+        });
     }
 
-    // 방폐장 맵
+    // 스크롤 Fix 헤더
+    window.addEventListener('scroll', function(e) {
+        let Yposition = document.querySelector('html').scrollTop;
+        const getHeader = document.getElementById('header');
+        if (Yposition > 50) {
+            getHeader.classList.add('fixed');
+        } else {
+            getHeader.classList.remove('fixed');
+        }
+    });
+
+    ////////// 방폐장 맵/타임라인 스크립트
     const getPoint = document.querySelectorAll('.map_wrap ._inner .point'); //타임라인 내 포인트
     const getMapPoint = document.querySelectorAll('._map ._map_point'); //지도 내 포인트
     
+    // 비디오 PHP Load
+    function get_video_html(index) {
+        $.ajax({
+            url: "/mapvideo/_video" + index + ".php",
+            type: "GET",
+            success: function( response ) {
+                $("#mapvideo_pop .modal-body").html(response);
+            }
+        });
+    }
+
     // Add Active Function
     function goTimeLine(index) {
         const getTL = document.querySelector('._timeline ._active');
         const getMapLine = document.querySelectorAll('._map ._line');
         const getMapName = document.querySelectorAll('._map .nametag');
+        
 
         const k = 0;
         const l = 1;
@@ -55,6 +87,10 @@ $(document).ready(function(){
         getPoint[index].classList.add('active');
         getMapPoint[index].classList.add('active');
         getMapName[index].classList.add('active');
+
+        get_video_html(index);
+        $('#mapvideo_pop').modal('show');
+        
     }
     
     for( let j = 0; j < 3; j++ ) {
@@ -65,6 +101,7 @@ $(document).ready(function(){
             goTimeLine(j)
         }); //지도 내 포인트 활성화
     }
+    ////.End 방폐장 맵/타임라인 스크립트
 
     /////////// 마블 보드게임
     const top_of_ratio = [0, 0, 0, 0, 0, 0, 25, 50, 75, 75, 75, 75, 50, 25]; // 말의 X좌표
@@ -253,5 +290,6 @@ $(document).ready(function(){
         focusOnSelect: true,
         arrows: true,
     });
+    /////.End 유튜브 슬라이더
         
 });

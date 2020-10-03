@@ -102,7 +102,7 @@
                 transition: all 0.3s;
             }
             ._active {
-                width:174px;
+                width:0;
             }
         }
     }
@@ -166,5 +166,23 @@
                 }
             }
         }
+    }
+}
+
+.modal.mapvideo_pop {
+    .close:not(:disabled):not(.disabled) {
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px 20px 0 0;
+        span {
+            font-size: 30px;
+            font-family: sans-serif;
+        }
+    }
+    .modal-dialog {
+        max-width: 1280px;
+    }
+    .modal-body {
+        width: 1280px;
     }
 }

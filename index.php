@@ -83,14 +83,14 @@
                     <!-- 지도 네비게이션 영역 -->
                     <div class="navigation_wrap">
                         <!-- 타임라인 -->
-                        <div id="timeline" class="_timeline point1">
+                        <div id="timeline" class="_timeline">
                             <div class="_inner">
                                 <div class="_active"></div>
                             </div>
                         </div>
                         <div class="_inner">
                             <ul>
-                                <li id="point1" class="point01 point active">
+                                <li id="point1" class="point01 point">
                                     <div class="pin">
                                         <!-- PIN 01 -->
                                         <svg class="pin01 _pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 60">
@@ -709,7 +709,7 @@
                                 <path fill="#00490c" d="M2024.7 746.4s2.8-13.4 19.3-12.7c16.5.7 14.5 21.2 14.5 21.2s13.8 3.5 15.8 17c2.1 13.4-3.4 13.4-3.4 13.4s15.1 22.6 0 28.3c0 0-4.1 12.7-11.7 4.9 0 0 0 19.1-18.6 12.7 0 0-22 11.3-24.8-12.7 0 0-15.8-1.4-16.5-16.3 0 0 .7-9.9 12.4-13.4 0 0-15.1-18.4-8.3-20.5s13.1 0 13.1 0-9.7-19.1 8.2-21.9z"/>
                                 <path fill="#00571f" d="M2070.8 785.3s5.5 0 3.4-13.4-15.8-17-15.8-17 2.1-20.5-14.5-21.2c-16.5-.7-19.3 12.7-19.3 12.7-5.1.8-7.9 2.9-9.4 5.5 2.8 11.4 8.3 24.1 18.4 24.9 0 0-35.8 27.6-8.3 33.2 0 0 11.7 15.6 25.5 0 0 0 10 5.3 19.7 4.2.2-.4.3-.7.3-.7 15.2-5.6 0-28.2 0-28.2z"/>
                                 <!-- 코라디움 -->
-                                <g class="map_point01 _map_point active">
+                                <g class="map_point01 _map_point">
                                     <defs>
                                     <path id="f" d="M2118.2 953.9v26.6s35.6-.4 49.9 15.5c0 0 29.8 3.6 29.8-13.1s-52.6-34.9-79.7-29z"/>
                                     </defs>
@@ -717,7 +717,7 @@
                                     <use overflow="visible" xlink:href="#f"/>
                                     </clipPath>
                                     <!-- 이름표: 01코라디움 -->
-                                    <g class="nametag _nametag01 active">
+                                    <g class="nametag _nametag01">
                                         <path d="M2609.4 918.8h-326c-3.3 0-6-2.7-6-6v-78.3c0-3.3 2.7-6 6-6h326c3.3 0 6 2.7 6 6v78.3c0 3.3-2.7 6-6 6z" class="_box" />
                                         <path d="M2354.2 872.8c0 13.2-6.2 19.8-14.5 19.8s-14.5-6.6-14.5-19.8c0-13.3 6.2-19.9 14.5-19.9s14.5 6.6 14.5 19.9zm-21 0c0 8.6 2.8 12.5 6.5 12.5s6.5-3.9 6.5-12.5-2.8-12.5-6.5-12.5-6.5 3.9-6.5 12.5zM2372.5 891.7h-8.4v-30.5h-6.7v-7.3h15.1v37.8zM2433.4 883.6v7.3h-40.1v-7.3h13.3v-6.4h7.9v6.4h18.9zm-10.1-9.9h-27.8v-7.3h27.8V861h-27.8v-7.3h35.7v26.9h-7.9v-6.9zM2455.1 883.4c3.8 0 7.8-.7 10.2-1.8v7c-2.4 1.2-6.7 1.9-10.5 1.9h-15.7v-22h14.7v-7.8H2439v-7h22.6v21.8H2447v8h8.1zm24.6-8.6h-4.6v17.5h-7.8v-39.6h7.8v14.5h4.6v7.6zM2507.8 860.8h-15.6v22.5h8.4c3.8 0 7.8-.7 10.2-1.8v7c-2.4 1.2-6.8 1.9-10.6 1.9h-16v-36.8h23.5v7.2zm13 31.5h-7.8v-39.6h7.8v39.6zM2551 875.6v2.2h13.8v14.6h-35.4v-14.6h13.8v-2.2h-16.1v-6h40.1v6H2551zm-22-15.4c0-5.7 7.6-8.1 18.1-8.1 10.4 0 18.1 2.4 18.1 8.1 0 5.7-7.6 8.1-18.1 8.1-10.4-.1-18.1-2.4-18.1-8.1zm28.1 23.4h-19.9v2.8h19.9v-2.8zm-19.7-23.4c0 1.5 3.8 2.2 9.7 2.2s9.7-.6 9.7-2.2c0-1.5-3.8-2.2-9.7-2.2s-9.7.7-9.7 2.2z" class="_text"/>
                                     </g>
@@ -1717,6 +1717,20 @@
             </footer>
             <!-- /.푸터 -->
             
+            <!-- 방폐장 맵 동영상 팝업 -->
+            <div class="modal fade in mapvideo_pop" id="mapvideo_pop" aria-hidden="false" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <div class="modal-body video_wrap youtube_wrap">
+                            <!-- 콘텐트는 /mapvideo 폴더안의 php 파일에서 로드 됨 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.방폐장 맵 동영상 팝업 -->
             <!-- 마블 보드게임 설명 팝업 -->
             <div class="modal fade in marble_pop" id="marble_pop" aria-hidden="false" role="dialog">
                 <div class="modal-dialog modal-dialog-centered" role="document">
