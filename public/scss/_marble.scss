@@ -43,6 +43,7 @@
                 background-position: center 40px;
                 background-repeat: no-repeat;
                 background-size: auto;
+                transition: all 0.3s;;
                 .popup {
                     display: flex;
                     width: 100%;
@@ -112,6 +113,9 @@
                     line-height: 1;
                     color: #fff101;
                     margin: 0 auto;
+                }
+                &._step.selected {
+                    opacity:0.6;
                 }
                 &.step01 {
                     background-color: #8066CC;
@@ -401,6 +405,19 @@
                     }
                 }
             }
+        }
+    }
+}
+
+// 상세설명 팝업
+.modal.marble_pop { 
+    .close:not(:disabled):not(.disabled) {
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px 20px 0 0;
+        span {
+            font-size: 30px;
+            font-family: sans-serif;
         }
     }
 }

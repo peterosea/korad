@@ -66,9 +66,6 @@
                 font-size: 14px;
                 margin-bottom: 40px;
             }
-            &.active {
-                cursor: default;
-            }
             &.active, &:hover {
                 ._pin > path {
                     fill: $colorYell;
@@ -104,7 +101,7 @@
                 background-color: $colorYell;
                 transition: all 0.3s;
             }
-            &.point01 ._active {
+            ._active {
                 width:174px;
             }
         }
@@ -146,18 +143,26 @@
                     }
                 }
             }
-            .map_point01:hover {
+            .map_point01:hover, .map_point01.active {
                 transform: scale(1.08) translate(-160px, -80px);
             }
-            .map_point02:hover {
+            .map_point02:hover, .map_point02.active {
                 transform: scale(1.02) translate(-20px, -10px);
             }
-            .map_point03:hover {
+            .map_point03:hover, .map_point03.active {
                 transform: scale(1.03) translate(-30px, -30px);
             }
             .nametag {
                 ._text {
                     fill:#fff;
+                }
+            }
+            .nametag.active {
+                ._box {
+                    fill:$colorYell;
+                }
+                ._text {
+                    fill:#000;
                 }
             }
         }

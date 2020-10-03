@@ -1,10 +1,74 @@
 ////// 제이쿼리
 $(document).ready(function(){
 
+    // 스크롤 Fix 헤더
+    window.addEventListener('scroll', function(e) {
+        var Yposition = window.scrollY;
+    }
+
+    // 방폐장 맵
+    const getPoint = document.querySelectorAll('.map_wrap ._inner .point'); //타임라인 내 포인트
+    const getMapPoint = document.querySelectorAll('._map ._map_point'); //지도 내 포인트
+    
+    // Add Active Function
+    function goTimeLine(index) {
+        const getTL = document.querySelector('._timeline ._active');
+        const getMapLine = document.querySelectorAll('._map ._line');
+        const getMapName = document.querySelectorAll('._map .nametag');
+
+        const k = 0;
+        const l = 1;
+        const m = 2;
+
+        if( index == 0 ) { //첫번째일 땐 첫번째 외 나머지 모든 아이템 클래스 삭제
+            getTL.style.width = '174px';
+            getPoint[l].classList.remove('active');
+            getPoint[m].classList.remove('active');
+            getMapPoint[l].classList.remove('active');
+            getMapPoint[m].classList.remove('active');
+            getMapLine[l].classList.remove('active');
+            getMapLine[m].classList.remove('active');
+            getMapName[l].classList.remove('active');
+            getMapName[m].classList.remove('active');
+        } else if ( index == 1 ) { //두번째일 땐 첫번째와 세번째 아이템 클래스 삭제
+            getTL.style.width = '605px';
+            getPoint[m].classList.remove('active');
+            getMapPoint[m].classList.remove('active');
+            getMapLine[l].classList.remove('active');
+            getMapLine[m].classList.remove('active');
+            getMapName[m].classList.remove('active');
+
+            getPoint[k].classList.add('active');
+            getMapLine[k].classList.add('active');
+            getMapName[k].classList.add('active');
+
+        } else if ( index == 2 ) { //세번째일 땐 모든 아이템 클래스 추가
+            getTL.style.width = '1035px';
+
+            getPoint[k].classList.add('active');
+            getPoint[l].classList.add('active');
+            getMapLine[k].classList.add('active');
+            getMapLine[l].classList.add('active');
+            getMapName[k].classList.add('active');
+            getMapName[l].classList.add('active');
+        }
+        getPoint[index].classList.add('active');
+        getMapPoint[index].classList.add('active');
+        getMapName[index].classList.add('active');
+    }
+    
+    for( let j = 0; j < 3; j++ ) {
+        getPoint[j].addEventListener('click', function(){
+            goTimeLine(j);
+        }); //타임라인 포인트 활성화
+        getMapPoint[j].addEventListener('click', function(){
+            goTimeLine(j)
+        }); //지도 내 포인트 활성화
+    }
+
     /////////// 마블 보드게임
-    const num_of_yRand = [360, 270, 540];
-    const top_of_ratio = [0, 0, 0, 0, 0, 0, 25, 50, 75, 75, 75, 75, 50, 25];
-    const left_of_ratio = [0, 16.67, 33.34, 50, 66.67, 83.34, 83.34, 83.34, 83.34, 50, 33.34, 16.67, 0, 0];
+    const top_of_ratio = [0, 0, 0, 0, 0, 0, 25, 50, 75, 75, 75, 75, 50, 25]; // 말의 X좌표
+    const left_of_ratio = [0, 16.67, 33.34, 50, 66.67, 83.34, 83.34, 83.34, 83.34, 50, 33.34, 16.67, 0, 0]; // 말의 Y좌표
     var sum_of_die = 0;
 
     function play_marble(yRand) {
@@ -36,20 +100,19 @@ $(document).ready(function(){
 
         $("#td" + sum_of_die).addClass("selected");
         get_board_html(sum_of_die);
-        $("#td" + sum_of_die).prepend('<a href="#detailbox" data-toggle="modal" class="popup"></a>');
+        $("#td" + sum_of_die).prepend('<a href="#marble_pop" data-toggle="modal" class="popup"></a>');
 
         var popupInterval = setTimeout(function () {
-            $('#detailbox').modal('show');
+            $('#marble_pop').modal('show');
         }, 500);
     }
     function get_board_html(num) {
         $.ajax({
-            url: "/marble/board/" + num,
+            url: "/marble/_step" + num + ".php",
             type: "GET",
             success: function( response ) {
-                $("#detailbox .modal-body").html(response);
+                $("#marble_pop .modal-body").html(response);
             }
-
         });
     }
     $(function() {
@@ -58,7 +121,7 @@ $(document).ready(function(){
             num  = num.replace("td", "");
 
             get_board_html(num);
-            $('#detailbox').modal('show');
+            $('#marble_pop').modal('show');
 
             e.preventDefault();
         });
@@ -190,4 +253,5 @@ $(document).ready(function(){
         focusOnSelect: true,
         arrows: true,
     });
+        
 });
