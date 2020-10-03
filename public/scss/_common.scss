@@ -46,6 +46,10 @@ $siteWidth: 1200px;
 * {
     box-sizing: border-box;
 }
+// Smooth Scroll 이벤트
+html {
+  scroll-behavior: smooth;
+}
 
 html, body {
     margin:0;
@@ -76,6 +80,11 @@ a {
 *:focus { 
   outline:none;
 }​
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
 path, g {
   transition:all 0.3s;
 }
@@ -93,6 +102,12 @@ path, g {
         display: flex;
         justify-content: center;
     }
+}
+
+.btn {
+  border-radius: 10px;
+  color:#fff;
+  font-weight: bold;
 }
 
 // 반응형 유튜브 CSS

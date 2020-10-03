@@ -53,6 +53,7 @@
             border: solid 1px #000000;
             padding: 0;
             cursor: pointer;
+            line-height: 0;
             &:before {
                 content:'';
                 width: 30px;
