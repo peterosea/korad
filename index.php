@@ -1605,7 +1605,9 @@
                                                 <li><input class="_blank" name="_blank12" /></li>
                                             </ul>
                                         </div>
-                                        <button class="btn btn_submit">정답 제출하기</button>
+                                        <!----------- 2020.10.05 수정 ------------>
+                                        <button type="button" class="btn btn_submit" data-target="#quiz_submit_pop" data-toggle="modal">정답 제출하기</button>
+                                        <!----------- 2020.10.05 수정 ------------>
                                     </form>
                                 </div>
                             </div>
@@ -1745,6 +1747,45 @@
                 </div>
             </div>
             <!-- /.마블 보드게임 설명 팝업 -->
+            
+            <!----------- 2020.10.05 추가 ------------>
+            <!-- 퀴즈 제출하기 팝업 -->
+            <div class="modal fade in quiz_submit_pop" id="quiz_submit_pop" aria-hidden="false" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <div class="modal-body">
+                            <form >
+                                <div class="input_grp">
+                                    <div class="_title">이벤트 참여하기</div>
+                                    <div class="row_container">
+                                        <label >이름</label>
+                                        <input type="text" class="for_name" placeholder="이름을 입력해주세요."/>
+                                    </div>
+                                    <div class="row_container">
+                                        <label >휴대폰 번호</label>
+                                        <input type="text" class="for_mobile" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="휴대폰 번호를 입력해주세요."/>
+                                    </div>
+                                </div>
+                                <div class="agreement_txt">
+                                    <h5>개인정보 처리방침 내용을 적어주세요.</h5>
+
+                                    <b>1. 개인정보 취급방침 내용을 적어주세요.</b>
+                                    개인정보 취급방침 내용을 적어주세요.개인정보 취급방침 내용을 적어주세요.개인정보 취급방침 내용을 적어주세요.개인정보 취급방침 내용을 적어주세요.개인정보 취급방침 내용을 적어주세요.개인정보 취급방침 내용을 적어주세요.개인정보 취급방침 내용을 적어주세요.개인정보 취급방침 내용을 적어주세요.개인정보 취급방침 내용을 적어주세요.개인정보 취급방침 내용을 적어주세요.개인정보 취급방침 내용을 적어주세요.개인정보 취급방침 내용을 적어주세요.개인정보 취급방침 내용을 적어주세요.개인정보 취급방침 내용을 적어주세요.개인정보 취급방침 내용을 적어주세요.개인정보 취급방침 내용을 적어주세요.
+                                </div>
+                                <div class="_agreement">
+                                    <input type="checkbox" class="checkbox"> <span>개인정보 처리방침을 읽고 이에 동의합니다.</span>
+                                </div>
+                                <button class="btn btn_submit">제출하기</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.퀴즈 제출하기 팝업 -->
+            <!----------- /.End 2020.10.05 추가 ------------>
         </div>
         <!-- /.content_container 사이트 콘텐트 영역 -->
     </div>
