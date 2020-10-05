@@ -310,3 +310,92 @@
         }
     }
 }
+
+///////// 2020.10.05 추가
+///// 정답제출하기 팝업
+.modal.quiz_submit_pop {
+    .modal-body {
+        padding: 0 30px;
+    }
+    .modal-dialog {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+    .close:not(:disabled):not(.disabled) {
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px 20px 0 0;
+        span {
+            font-size: 30px;
+            font-family: sans-serif;
+        }
+    }
+    ::placeholder {
+        color: #ccc;
+    }
+    .input_grp {
+        .row_container {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            align-items: center;
+            &:last-child {
+                margin-top:10px;
+            }
+        }
+        label {
+            font-size: 18px;
+            width: 22%;
+        }
+        ._title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            font-weight: bold;
+        }
+        input {
+            border: 1px solid #222;
+            padding: 5px 10px;
+            height: 50px;
+            border-radius: 4px;
+            width:78%;
+        }
+    }
+    .agreement_txt {
+        // border: 1px solid #222;
+        padding: 30px;
+        height: 200px;
+        overflow-y: scroll;
+        margin-top: 30px;
+        background-color: #f3f3f3;
+        border-radius: 5px;
+        h5 {
+            font-size: 18px;
+        }
+    }
+    ._agreement {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+        .checkbox {
+            width:20px;
+            height: 20px;
+            border:1px solid #222;
+            border-radius:5px;
+            margin-right: 10px;
+        }
+    }
+    .btn.btn_submit {
+        margin: 30px auto;
+        background-color: #401ba2;
+        padding: 15px 60px;
+        font-size: 18px;
+        border: none;
+        display: block;
+    }
+}
+///////// 2020.10.05 추가
