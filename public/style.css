@@ -507,8 +507,8 @@ section.site_title_wrap .video_wrap.youtube_wrap {
 
 .content_section.map_wrap .navigation_wrap li.point ._pin > path {
   fill: #fff;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .content_section.map_wrap .navigation_wrap li.point .illust {
@@ -535,8 +535,8 @@ section.site_title_wrap .video_wrap.youtube_wrap {
 }
 
 .content_section.map_wrap .navigation_wrap li.point .illust ._illust {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   -webkit-filter: saturate(0.3);
           filter: saturate(0.3);
 }
@@ -563,8 +563,8 @@ section.site_title_wrap .video_wrap.youtube_wrap {
 
 .content_section.map_wrap .navigation_wrap li.point ._description {
   color: rgba(255, 255, 255, 0.5);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   font-size: 14px;
   margin-bottom: 40px;
   margin-top: 10px;
@@ -622,8 +622,8 @@ section.site_title_wrap .video_wrap.youtube_wrap {
   width: 0;
   height: 100%;
   background-color: #fff101;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .content_section.map_wrap .navigation_wrap ._timeline ._active {
@@ -666,8 +666,8 @@ section.site_title_wrap .video_wrap.youtube_wrap {
 .content_section.map_wrap .map ._map ._line {
   opacity: 0.4;
   fill: #fff;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .content_section.map_wrap .map ._map ._line:hover {
@@ -682,8 +682,8 @@ section.site_title_wrap .video_wrap.youtube_wrap {
 }
 
 .content_section.map_wrap .map ._map ._map_point {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .content_section.map_wrap .map ._map ._map_point:hover {
@@ -711,6 +711,11 @@ section.site_title_wrap .video_wrap.youtube_wrap {
 .content_section.map_wrap .map ._map .map_point03:hover, .content_section.map_wrap .map ._map .map_point03.active {
   -webkit-transform: scale(1.03) translate(-30px, -30px);
           transform: scale(1.03) translate(-30px, -30px);
+}
+
+.content_section.map_wrap .map ._map .nametag {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .content_section.map_wrap .map ._map .nametag ._text {
