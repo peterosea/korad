@@ -100,8 +100,9 @@ $(document).ready(function(){
 
         // 비디오 팝업창 실행
         getVideoHtml(index);
-        $('#mapvideo_pop').modal('show');
-        
+        setTimeout(function () {
+            $('#mapvideo_pop').modal('show');
+        }, 800);
     }
     
     for( let j = 0; j < 3; j++ ) {

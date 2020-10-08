@@ -33,7 +33,7 @@
                 height:58px;
                 > path {
                     fill:#fff;
-                    transition: all 0.3s;
+                    transition: all 0.5s;
                 }
             }
             
@@ -49,7 +49,7 @@
                     width: 100%;
                 }
                 ._illust {
-                    transition: all 0.3s;
+                    transition: all 0.5s;
                     filter:saturate(0.3);
                 }
                 .illust01 {
@@ -71,7 +71,7 @@
             }
             ._description {
                 color:rgba(255,255,255,0.5);
-                transition: all 0.3s;
+                transition: all 0.5s;
                 font-size: 14px;
                 margin-bottom: 40px;
                 margin-top: 10px;
@@ -113,7 +113,7 @@
                 width: 0;
                 height: 100%;
                 background-color: $colorYell;
-                transition: all 0.3s;
+                transition: all 0.5s;
             }
             ._active {
                 width:0;
@@ -140,7 +140,7 @@
             ._line {
                 opacity: 0.4;
                 fill:#fff;
-                transition:all 0.3s;
+                transition:all 0.5s;
                 &:hover {
                     fill: $colorYell;
                     opacity: 1;
@@ -152,7 +152,7 @@
                 opacity: 1;
             }
             ._map_point {
-                transition: all 0.3s;
+                transition: all 0.5s;
                 &:hover {
                     cursor: pointer;
                     ._box {
@@ -173,6 +173,7 @@
                 transform: scale(1.03) translate(-30px, -30px);
             }
             .nametag {
+                transition: all 0.5s;
                 ._text {
                     fill:#fff;
                 }
