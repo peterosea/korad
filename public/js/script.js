@@ -129,14 +129,12 @@ $(document).ready(function(){
         var num_of_die = (yRand / 90) + (minus_val);
         sum_of_die += num_of_die;
         // 14는 골인임
-        if( sum_of_die>13 ) {
+        if( sum_of_die > 13 ) {
             $(".marker").css("top", "-10px");
             $(".marker").css("left", "20px");
-            $("#td1" + sum_of_die).addClass("selected");
-            $("#td14").prepend('<a href="#finishbox" data-toggle="modal" class="popup"></a>');
-
+            get_board_html(14);
             var popupInterval = setTimeout(function () {
-                $('#finishbox').modal('show');
+                $('#marble_pop').modal('show');
             }, 500);
             return false;
         }
@@ -173,9 +171,6 @@ $(document).ready(function(){
             $('#marble_pop').modal('show');
 
             e.preventDefault();
-        });
-        $('#finishbox').on('hidden.bs.modal', function () {
-            location.href="/marble";
         });
     });
 
