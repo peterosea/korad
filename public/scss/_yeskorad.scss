@@ -1,12 +1,15 @@
 .content_section.yeskorad_wrap {
     flex-direction: column;
     align-items: center;
+    background-color: #a0d1db;
     .title_wrap {
         margin:110px 0 70px;
         ._description {
             line-height: 1.6em;
             text-align: center;
             color: #401ba2;
+            margin-bottom: 0;
+            font-size: 20px;
         }
         ._ic_youtube {
             background-image: url(#{$urlImg}/ic_youtube.png);
@@ -49,14 +52,15 @@
             margin-bottom: 60px;
         }
         ._inner {
-            width: 700px;
+            width: 760px;
         }
         .item_nav {
             margin:0 25px;
             display: flex;
             justify-content: center;
             font-weight: bold;
-            font-size: 21px;
+            font-size: 26px;
+            text-align: center;
         }
         .slick-arrow {
             font-size: 0;

@@ -5,11 +5,13 @@
         align-items: center;
     }
     .title_wrap {
-        margin:110px 0 70px;
+        margin:100px 0 45px;
         ._description {
             line-height: 1.6em;
             text-align: center;
             color: #401ba2;
+            margin:30px 0 0;
+            font-size: 20px;
         }
         @include respond-to('lg') {
             width: 90%;
@@ -181,9 +183,11 @@
             .btn_submit {
                 margin: 65px auto 90px;
                 background-color: #401ba2;
-                padding:25px 90px;
+                padding:0;
                 font-size: 30px;
                 border: none;
+                width: 350px;
+                height: 80px;
                 @include respond-to('md'){
                     font-size: 21px;
                     padding: 20px;
@@ -199,7 +203,7 @@
     }
     .information {
         background-color: #ffffff;
-        padding: 70px 140px;
+        padding: 70px 130px;
         @include respond-to('xl') {
             padding: 70px;
         }
@@ -213,19 +217,23 @@
                 margin-top: 40px;
             }
             .col_1_2 {
-                width:50%;
+                flex: 0 0 auto;
                 padding-right: 80px;
+                &:first-child {
+                    flex: 0 0 540px;
+                }
                 &:last-child {
                     padding-right: 0;
                 }
             }
-            @include respond-to('lg'){
+            @include respond-to('xl'){
                 flex-direction: column;
                 .col_1_2 {
                     width: 100%;
                     padding-right: 0;
                     &:first-child {
                         margin-bottom: 40px;
+                        flex: 0 0 auto;
                     }
                 }
             }
@@ -249,6 +257,8 @@
                     align-items: center;
                     span {
                         padding-left: 15px;
+                        font-size: 18px;
+                        line-height: 1.2;
                     }
                 }
                 .thumb {
@@ -370,8 +380,16 @@
         margin-top: 30px;
         background-color: #f3f3f3;
         border-radius: 5px;
+        font-size: 15px;
         h5 {
             font-size: 18px;
+        }
+        ol {
+            padding-left: 24px;
+            margin-bottom: 0;
+            li {
+                list-style: hangul;
+            }
         }
     }
     ._agreement {
