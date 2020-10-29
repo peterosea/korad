@@ -33,7 +33,8 @@ header.main_header {
         }
     }
     nav.main_nav {
-        height: 100%;
+        // height: 100%;
+        padding: 10px 0;
         > ul {
             display: flex;
             height: 100%;

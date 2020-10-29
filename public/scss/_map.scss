@@ -28,6 +28,9 @@
             @include respond-to('lg'){
                 width: 25%;
             }
+            @include respond-to('sm'){
+                width: 31%;
+            }
             ._pin {
                 width:42px;
                 height:75px;
@@ -75,6 +78,9 @@
                 font-size: 14px;
                 margin-bottom: 40px;
                 margin-top: 10px;
+                @include respond-to('lg'){
+                    font-size: 12px;
+                }
             }
             &.active, &:hover {
                 ._pin > path {
@@ -212,6 +218,9 @@
         width: 1280px;
         @include respond-to('xl') {
             width:100%;
+        }
+        @include respond-to('sm') {
+            padding: 5px;
         }
     }
 }
