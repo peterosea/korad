@@ -18,6 +18,7 @@ section.site_title_wrap {
         flex-direction: column;
         align-items: center;
         position: relative;
+        width: 100%;
         .mobile {
             position: absolute;
             top: 70px;
@@ -31,10 +32,16 @@ section.site_title_wrap {
             align-items: center;
         }
         .img_title {
-            justify-content: center;
-            display: flex;
+            // justify-content: center;
+            // display: flex;
+            width: 100%;
             img {
-                width: 100%;
+                max-width: 100%;
+                width: auto;
+                height: auto;
+                display: block;
+                object-fit: contain;
+                margin: 0 auto;
             }
         }
         .char_korad {
@@ -57,7 +64,7 @@ section.site_title_wrap {
         color:#fff;
         border-radius: 50px;
         background-color: $colorAcc;
-        font-size: 32px;
+        font-size: 27px;
         font-weight: bold;
         text-align: center;
         width:100%;

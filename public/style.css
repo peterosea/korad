@@ -1,21 +1,21 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'GmarketSans';
-  src: local(GmarketSansLight), local(GmarketSansLight), url(public/font/GmarketSansEOTLight.eot?#iefix) format("embedded-opentype"), url(public/font/GmarketSansLight.woff) format("woff"), url(public/font/GmarketSansTTFLight.ttf) format("truetype");
+  src: local(GmarketSansLight), local(GmarketSansLight), url(public/font/GmarketSansEOTLight.eot?#iefix) format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff") format("woff"), url(public/font/GmarketSansTTFLight.ttf) format("truetype"), url(public/font/GmarketSansLight.otf) format("opentype");
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
   font-family: 'GmarketSans';
-  src: local(GmarketSansMedium), local(GmarketSansMedium), url(public/font/GmarketSansEOTMedium.eot?#iefix) format("embedded-opentype"), url(public/font/GmarketSansMedium.woff) format("woff"), url(public/font/GmarketSansTTFMedium.ttf) format("truetype");
+  src: local(GmarketSansMedium), local(GmarketSansMedium), url(public/font/GmarketSansEOTMedium.eot?#iefix) format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff"), url(public/font/GmarketSansTTFMedium.ttf) format("truetype"), url(public/font/GmarketSansMedium.otf) format("opentype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'GmarketSans';
-  src: local(GmarketSansBold), local(GmarketSansBold), url(public/font/GmarketSansEOTBold.eot?#iefix) format("embedded-opentype"), url(public/font/GmarketSansBold.woff) format("woff"), url(public/font/GmarketSansTTFBold.ttf) format("truetype");
+  src: local(GmarketSansBold), local(GmarketSansBold), url(public/font/GmarketSansEOTBold.eot?#iefix) format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format("woff"), url(public/font/GmarketSansTTFBold.ttf) format("truetype"), url(public/font/GmarketSansBold.otf) format("opentype");
   font-style: normal;
   font-weight: bold;
 }
@@ -35,7 +35,7 @@ html, body {
 }
 
 body, div, a, h1, h2, h3, h4, h5, h6, p, td, th {
-  font-family: 'GmarketSans', sans-serif;
+  font-family: 'GmarketSans', sans-serif !important;
   line-height: 1.4em;
   color: #222;
 }
@@ -106,8 +106,8 @@ path, g {
 
 @media (max-width: 1280px) {
   .content_section .section_inner, .content_section ._inner {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -206,7 +206,7 @@ header.main_header .logo, header.main_header ._blank {
 }
 
 header.main_header nav.main_nav {
-  height: 100%;
+  padding: 10px 0;
 }
 
 header.main_header nav.main_nav > ul {
@@ -330,6 +330,7 @@ section.site_title_wrap .title_wrap {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  width: 100%;
 }
 
 section.site_title_wrap .title_wrap .mobile {
@@ -352,16 +353,17 @@ section.site_title_wrap .title_wrap .mobile {
 }
 
 section.site_title_wrap .title_wrap .img_title {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
 }
 
 section.site_title_wrap .title_wrap .img_title img {
-  width: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 auto;
 }
 
 section.site_title_wrap .title_wrap .char_korad {
@@ -386,7 +388,7 @@ section.site_title_wrap .welcome {
   color: #fff;
   border-radius: 50px;
   background-color: #401ba2;
-  font-size: 32px;
+  font-size: 27px;
   font-weight: bold;
   text-align: center;
   width: 100%;
@@ -502,6 +504,12 @@ section.site_title_wrap .video_wrap.youtube_wrap {
   }
 }
 
+@media (max-width: 576px) {
+  .content_section.map_wrap .navigation_wrap li.point {
+    width: 31%;
+  }
+}
+
 .content_section.map_wrap .navigation_wrap li.point ._pin {
   width: 42px;
   height: 75px;
@@ -570,6 +578,12 @@ section.site_title_wrap .video_wrap.youtube_wrap {
   font-size: 14px;
   margin-bottom: 40px;
   margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+  .content_section.map_wrap .navigation_wrap li.point ._description {
+    font-size: 12px;
+  }
 }
 
 .content_section.map_wrap .navigation_wrap li.point.active ._pin > path, .content_section.map_wrap .navigation_wrap li.point:hover ._pin > path {
@@ -769,6 +783,12 @@ section.site_title_wrap .video_wrap.youtube_wrap {
   }
 }
 
+@media (max-width: 576px) {
+  .modal.mapvideo_pop .modal-body {
+    padding: 5px;
+  }
+}
+
 .content_section.yeskorad_wrap {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -928,6 +948,12 @@ section.site_title_wrap .video_wrap.youtube_wrap {
           align-items: center;
 }
 
+@media (max-width: 768px) {
+  .content_section.marble_wrap .section_inner {
+    padding: 0 10px;
+  }
+}
+
 .content_section.marble_wrap .title_wrap {
   margin: 100px 0 70px;
   -webkit-box-pack: center;
@@ -980,11 +1006,14 @@ section.site_title_wrap .video_wrap.youtube_wrap {
 @media (max-width: 768px) {
   .content_section.marble_wrap .marble {
     margin-bottom: 70px;
+    overflow: scroll;
+    width: 100%;
   }
 }
 
 .content_section.marble_wrap .marble .mobile.warning {
   padding: 40px;
+  display: none;
 }
 
 .content_section.marble_wrap .marble .mobile.warning h3 {
@@ -1007,12 +1036,6 @@ section.site_title_wrap .video_wrap.youtube_wrap {
   }
 }
 
-@media (max-width: 768px) {
-  .content_section.marble_wrap .marble #marker {
-    display: none;
-  }
-}
-
 .content_section.marble_wrap .marble .board {
   border-collapse: separate;
   border-spacing: 3px;
@@ -1020,7 +1043,7 @@ section.site_title_wrap .video_wrap.youtube_wrap {
 
 @media (max-width: 768px) {
   .content_section.marble_wrap .marble .board {
-    display: none;
+    width: 780px;
   }
 }
 
@@ -1103,6 +1126,13 @@ section.site_title_wrap .video_wrap.youtube_wrap {
 .content_section.marble_wrap .marble .board td.dice_blank {
   width: auto;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .content_section.marble_wrap .marble .board td.dice_blank {
+    background-image: url(../public/img/dice_guide.png);
+    background-position: 9% center;
+  }
 }
 
 .content_section.marble_wrap .marble .board td.start {
@@ -1572,6 +1602,11 @@ section.site_title_wrap .video_wrap.youtube_wrap {
   border-bottom: 1px solid #ccc;
 }
 
+.modal.marble_pop .modal-body ._title img {
+  display: block;
+  margin: 20px auto 10px;
+}
+
 .modal.marble_pop .modal-body ._description {
   word-break: keep-all;
 }
@@ -1683,10 +1718,17 @@ section.site_title_wrap .video_wrap.youtube_wrap {
 
 @media (max-width: 576px) {
   .content_section.quiz_wrap .quiz .bubble {
-    left: -80px;
-    top: -46px;
-    width: 70px;
-    height: 70px;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    position: relative;
+    background: transparent;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    color: #63b4c4;
+    margin-bottom: 20px;
   }
 }
 
@@ -1701,13 +1743,14 @@ section.site_title_wrap .video_wrap.youtube_wrap {
 
 @media (max-width: 992px) {
   .content_section.quiz_wrap .quiz ._quiz {
-    width: 70%;
+    width: 83%;
   }
 }
 
 @media (max-width: 992px) {
   .content_section.quiz_wrap .quiz ._quiz {
-    margin-top: 50px;
+    margin-top: 40px;
+    padding-bottom: 30px;
   }
 }
 
@@ -1779,7 +1822,13 @@ section.site_title_wrap .video_wrap.youtube_wrap {
 
 @media (max-width: 992px) {
   .content_section.quiz_wrap .quiz ._answer {
-    width: 70%;
+    width: 83%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content_section.quiz_wrap .quiz ._answer {
+    margin-top: 30px;
   }
 }
 
@@ -1796,6 +1845,14 @@ section.site_title_wrap .video_wrap.youtube_wrap {
           flex-direction: column;
 }
 
+@media (max-width: 576px) {
+  .content_section.quiz_wrap .quiz ._answer form {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .content_section.quiz_wrap .quiz ._answer .bubble {
   top: -64px;
 }
@@ -1808,7 +1865,7 @@ section.site_title_wrap .video_wrap.youtube_wrap {
 
 @media (max-width: 576px) {
   .content_section.quiz_wrap .quiz ._answer .bubble {
-    top: -70px;
+    top: 0;
   }
 }
 
@@ -1824,7 +1881,7 @@ section.site_title_wrap .video_wrap.youtube_wrap {
 
 @media (max-width: 768px) {
   .content_section.quiz_wrap .quiz ._answer ._answer_grp .blank_grp li {
-    margin-right: 10px;
+    margin-right: 5px;
   }
 }
 
@@ -1865,7 +1922,7 @@ section.site_title_wrap .video_wrap.youtube_wrap {
 
 @media (max-width: 768px) {
   .content_section.quiz_wrap .quiz ._answer ._answer_grp._answer02 {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 
@@ -1891,7 +1948,7 @@ section.site_title_wrap .video_wrap.youtube_wrap {
 @media (max-width: 576px) {
   .content_section.quiz_wrap .quiz ._answer .btn_submit {
     font-size: 18px;
-    margin: 40px auto 50px;
+    margin: 25px auto 50px;
   }
 }
 
@@ -1908,7 +1965,7 @@ section.site_title_wrap .video_wrap.youtube_wrap {
 
 @media (max-width: 576px) {
   .content_section.quiz_wrap .information {
-    padding: 40px;
+    padding: 30px;
   }
 }
 

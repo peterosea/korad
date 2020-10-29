@@ -59,10 +59,15 @@
                 height: 100px;
             }
             @include respond-to('sm'){
-                left: -80px;
-                top: -46px;
-                width: 70px;
-                height: 70px;
+                left: 0;
+                top: 0;
+                width: auto;
+                height: auto;
+                position: relative;
+                background: transparent;
+                justify-content: flex-start;
+                color: #63b4c4;
+                margin-bottom: 20px;
             }
         }
         ._quiz {
@@ -73,10 +78,11 @@
             max-width: 700px;
             width:100%;
             @include respond-to('lg'){
-                width:70%;
+                width:83%;
             }
             @include respond-to('lg'){
-                margin-top:50px;
+                margin-top:40px;
+                padding-bottom: 30px;
             }
             .text_grp {
                 h3 {
@@ -125,12 +131,18 @@
             max-width: 700px;
             width:100%;
             @include respond-to('lg'){
-                width:70%;
+                width:83%;
+            }
+            @include respond-to('sm'){
+                margin-top:30px;
             }
             form {
                 display: flex;
                 align-items: center;
                 flex-direction: column;
+                @include respond-to('sm'){
+                    align-items: flex-start;
+                }
             }
             .bubble {
                 top: -64px;
@@ -138,7 +150,7 @@
                     top:-100px;
                 }
                 @include respond-to('sm'){
-                    top:-70px;
+                    top:0;
                 }
             }
             ._answer_grp {
@@ -148,7 +160,7 @@
                     li {
                         margin-right: 20px;
                         @include respond-to('md'){
-                            margin-right: 10px;
+                            margin-right: 5px;
                         }
                     }
                     ._blank {
@@ -176,7 +188,7 @@
                 &._answer02 {
                     margin-top:30px;
                     @include respond-to('md'){
-                        margin-top:20px;
+                        margin-top:10px;
                     }
                 }
             }
@@ -196,7 +208,7 @@
                 }
                 @include respond-to('sm'){
                     font-size: 18px;
-                    margin: 40px auto 50px;
+                    margin: 25px auto 50px;
                 }
             }
         }
@@ -208,7 +220,7 @@
             padding: 70px;
         }
         @include respond-to('sm'){
-            padding: 40px;
+            padding: 30px;
         }
         .row_container {
             display: flex;
