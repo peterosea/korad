@@ -42,6 +42,14 @@
             overflow: scroll;
             width: 100%;
         }
+        .marble_inner {
+            width: 100%;
+            position: relative;
+            @include respond-to('md'){
+                // display:none;
+                width: 780px;
+            }
+        }
         .mobile.warning {
             padding: 40px;
             display: none;
@@ -69,10 +77,10 @@
         .board {
             border-collapse: separate;
             border-spacing: 3px;
-            @include respond-to('md'){
-                // display:none;
-                width: 780px;
-            }
+            // @include respond-to('md'){
+            //     // display:none;
+            //     width: 780px;
+            // }
             td {
                 border-radius: 5px;
                 width: 195px;
