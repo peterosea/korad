@@ -7,11 +7,22 @@
     $url_img = $url_public . "/img"; //img 폴더 경로 설정
 ?>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L21YM0S5K0"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-L21YM0S5K0');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>코라드 M방폐장 랜선투어</title>
-    <meta name="title" content="코라드 M방폐장 랜선투어">
-    <meta name="description" content="코라드 M방폐장 랜선투어입니다.">
+    <!-- <meta name="viewport" content="width=1200, user-scalable=no"> -->
+    <title>한국원자력환경공단 M방폐장 랜선투어</title>
+    <meta name="title" content="한국원자력환경공단 M방폐장 랜선투어">
+    <meta name="description" content="한국원자력환경공단은 비교적 방사능 수치가 낮은 방사성폐기물을 처분 및 관리하는 곳입니다.">
     <meta name="keywords" content="코라드, 방폐장, 방사성폐기물, 한국원자력환경공단, 랜선투어">
     <link rel="shortcut icon" href="public/img/favicon.png">
         
@@ -23,6 +34,11 @@
     <link type="text/css" rel="stylesheet" href="<?php echo $url_public; ?>/js/slick/slick/slick.css" > <!--  Slick 슬라이더 CSS -->
     <link type="text/css" rel="stylesheet" href="<?php echo $url_public; ?>/style.css" > <!-- peterosea CSS 스타일시트 -->
     <script type="text/javascript" src="<?php echo $url_public ?>/js/script.js"></script> <!-- peterosea JS 파일 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="koradm.com"/>
+    <meta property="og:title" content="한국원자력환경공단" />
+    <meta property="og:description" content="한국원자력환경공단 M방폐장 랜선투어" />
+    <meta property="og:image" content="/public/img/sns-thumb.jpg" />
 </head>
 <body>
     <!-- body_container -->
@@ -62,17 +78,17 @@
                     <div class="section_inner">
                         <div class="title_wrap">
                             <!-- <div class="mobile"><img src="<?php echo $url_img; ?>/title_sticker.png" alt="모바일"/></div> -->
-                            <div class="img_title"><img src="<?php echo $url_img; ?>/site_title_whole.png" alt="코라드 M방폐장 랜선투어"/></div>
+                            <div class="img_title"><img src="<?php echo $url_img; ?>/site_title_whole.png" alt="한국원자력환경공단 M방폐장 랜선투어"/></div>
                             <!-- <div class="char_korad"></div> -->
                         </div>
-                        <div class="welcome">코라드 M방폐장 랜선투어에 오신 여러분을 환영합니다!!</div>
+                        <div class="welcome">한국원자력환경공단 M방폐장 랜선투어에 오신 여러분을 환영합니다!!</div>
                         <p class="description">
                         랜선투어를 통해 여러분이 방문하실 곳은 경주 중 · 저준위 방사성폐기물 처분시설로<br>
                         원전 , 병원 , 연구기관 등에서 발생한 비교적 방사능 수치가 낮은 방사성폐기물을 처분 및 관리하는 곳입니다.
                         </p>
                         <div class="video_wrap youtube_wrap">
                             <div class="video-container">
-                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4Z5IDXdgURc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FAX3GEUF0w0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -176,7 +192,7 @@
                                     </div>
                                     <div class="_title">코라디움</div>
                                     <p class="_description">
-                                    방사성폐기물이 어떻게 관리되고 있는지 배우며 체험할 수 있는 코라디움과<br>약 2만평 규모의 테마공원으로 구성되어 있으며 누구나 방문할 수 있습니다.
+                                        방사성폐기물이 어떻게 관리되고 있는지 배우며 체험할 수 있는 홍보관입니다.
                                     </p>
                                 </li>
                                 <li id="point2" class="point02 point">
@@ -549,8 +565,7 @@
                                     </div>
                                     <div class="_title">지상지원시설</div>
                                     <p class="_description">
-                                    방폐물을 인수해 보관하면서 처분하기에 적합한지 검사하는 시설입니다.<br>
-                                    방폐물은 최종 처분되기까지 7단계의 철저한 검사를 거칩니다.
+                                        방사성폐기물을 인수해 보관하면서 처분하기 적합한지 검사하는 시설입니다.
                                     </p>
                                 </li>
                                 <li id="point3" class="point03 point">
@@ -679,8 +694,7 @@
                                     </div>
                                     <div class="_title">동굴처분시설</div>
                                     <p class="_description">
-                                    검사에 최종 합격한 방폐물을 영구적으로 안전하게 격리하는 시설입니다.<br>
-                                    방폐물 운반에 사용되는 운영동굴과 처분되는 건설동굴로 나뉩니다.
+                                        검사에 최종 합격한 방사성폐기물을 영구적으로 안전하게 격리하는 시설입니다.
                                     </p>
                                 </li>
                             </ul>
@@ -1367,11 +1381,11 @@
                 </section>
                 <!-- /.방폐장 지도 영역 -->
                 <!-- yesKORAD 최신 영상 및 뉴스리스트 영역 -->
-                <section class="content_section yeskorad_wrap">
+                <!---section class="content_section yeskorad_wrap">
                     <div class="title_wrap">
                         <img src="<?php echo $url_img; ?>/title_yeskorad.png" alt="YesKORAD">
                         <p class="_description">
-                        코라드의 최신 뉴스와 공단 소식을 영상으로 만나보세요.<br>
+                        한국원자력환경공단의 최신 뉴스와 공단 소식을 영상으로 만나보세요.<br>
                         더 많은 소식은 한국원자력환경공단 공식 <span class="_ic_youtube"></span>유튜브채널에서 보실 수 있어요.
                         </p>
                     </div>
@@ -1421,7 +1435,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section--->
                 <!-- /.yesKORAD 최신 영상 및 뉴스리스트 영역 -->
                 <!-- 방폐마블 영역 -->
                 <section id="anchor-marble" class="content_section marble_wrap">
@@ -1433,128 +1447,149 @@
                             중저준위 방사선폐기물이 안전하게 처분 및 관리되는 과정을 함께 알아봐요.
                             </p>
                         </div>
+                        <!-- marble -->
                         <div class="marble">
-                            <div class="mobile warning">
-                                <h3>모바일에선 게임을 이용하실 수 없습니다.<br>
-                                    PC에서 이용해주세요.</h3>
-                            </div>
-                            <!-- 게임 말 -->
-                            <div class="marker" id="marker">
-                                <img src="<?php echo $url_img; ?>/marker.png" alt="게임 말">
-                            </div>
-                            <!-- 마블 보드게임 -->
-                            <table class="board">
-                                <tr>
-                                    <td id="td14" class="start">
-                                        <span class="_start">출발</span>
-                                    </td>
-                                    <td id="td1" class="step01 _step">
-                                        <div class="_image"><img src="<?php echo $url_img ?>/marble-image-01.png"></div>
-                                        <span class="_txt">임시저장시설</span>
-                                    </td>
-                                    <td id="td2" class="step02 _step">
-                                        <div class="_image"><img src="<?php echo $url_img ?>/marble-image-02.png"></div>
-                                        <span class="_txt">인수검사 1단계</span>
-                                    </td>
-                                    <td id="td3" class="step03 _step">
-                                        <span class="_txt">인수검사 2단계</span>
-                                    </td>
-                                    <td id="td4" class="step04 _step">
-                                        <span class="_txt">인수검사 3단계</span>
-                                    </td>
-                                    <td id="td5" class="step05 _step">
-                                        <span class="_txt">인수검사 4단계</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td id="td13" class="step13 _step">
-                                        <div class="_image"><img src="<?php echo $url_img ?>/marble-image-07.png"></div>
-                                        <span class="_txt">사일로(처분고) 안치</span>
-                                    </td>
-                                    <td colspan="4" rowspan="2" class="dice_blank">
-                                        <!-- 주사위 굴리기 버튼 -->
-                                        <div id="btn_dice" class="btn_dice_wrap">
-                                            <img src="<?php echo $url_img; ?>/img_dice.png" class="img_dice">
-                                            <span class="dice_txt">주사위<br>굴리기</span>
-                                            <!-- <button id="text_roll" alt="주사위 던지기"></button> -->
-                                        </div>
-                                        <!-- 3D 주사위 -->
-                                        <div id="the_dice" class="dice">
-                                            <div id="cube" class="">
-                                                <div class="side front">
-                                                    <span class="dot dot1"></span>
-                                                </div>
-                                                <div class="inner front"></div>
-                                                <div class="side back">
-                                                    <span class="dot dot1"></span>
-                                                    <span class="dot dot2"></span>
-                                                    <span class="dot dot3"></span>
-                                                </div>
-                                                <div class="inner back"></div>
-                                                <div class="side right">
-                                                    <span class="dot dot1"></span>
-                                                    <span class="dot dot2"></span>
-                                                </div>
-                                                <div class="inner right"></div>
-                                                <div class="side left">
-                                                    <span class="dot dot1"></span>
-                                                    <span class="dot dot2"></span>
-                                                </div>
-                                                <div class="inner left"></div>
-                                                <!-- 위에선 보이지 않는 옆면 -->
-                                                <div class="side top">
-                                                    <span class="dot dot1"></span>
-                                                </div>
-                                                <div class="inner top"></div>
-                                                <div class="side bottom">
-                                                    <span class="dot dot1"></span>
-                                                    <span class="dot dot2"></span>
-                                                    <span class="dot dot3"></span>
-                                                </div>
-                                                <div class="inner bottom"></div>
+                            <!-- marble_inner -->
+                            <div class="marble_inner">
+                                <div class="mobile warning">
+                                    <h3>모바일에선 게임을 이용하실 수 없습니다.<br>
+                                        PC에서 이용해주세요.</h3>
+                                </div>
+                                <!-- 게임 말 -->
+                                <div class="marker" id="marker">
+                                    <img src="<?php echo $url_img; ?>/marker.png" alt="게임 말">
+                                </div>
+                                <!-- 마블 보드게임 -->
+                                <table class="board">
+                                    <tr>
+                                        <td id="td14" class="start">
+                                            <span class="_start">출발</span>
+                                        </td>
+                                        <td id="td1" class="step01 _step">
+                                            <div class="_image"><img src="<?php echo $url_img ?>/marble-image-01.png"></div>
+                                            <span class="_txt">임시저장시설</span>
+                                        </td>
+                                        <td id="td2" class="step02 _step">
+                                            <div class="_txt_grp">
+                                                <span class="_label">인수검사 1단계</span>
+                                                <b class="_name">중량검사</b>
                                             </div>
-                                            <div class="box_shadow"></div>
-                                        </div>
-                                    </td>
-                                    <td id="td6" class="step06 _step">
-                                        <span class="_txt">인수검사 5단계</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td id="td12" rowspan="2" class="step12 _step">
-                                        <div class="_image"><img src="<?php echo $url_img ?>/marble-image-06.png"></div>
-                                        <span class="_txt">
-                                            여기서 잠깐!<br>
-                                            동굴처분시설은<br>
-                                            안전한가요?
-                                        </span>
-                                    </td>
-                                    <td id="td7" class="step07 _step">
-                                        <span class="_txt">인수검사 6단계</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td id="td11" class="step11 _step">
-                                        <div class="_image"><img src="<?php echo $url_img ?>/marble-image-05.png"></div>
-                                        <span class="_txt">동굴처분시설로 이동</span>
-                                    </td>
-                                    <td id="td10" class="step10 _step">
-                                        <div class="_image"><img src="<?php echo $url_img ?>/marble-image-04.png"></div>
-                                        <span class="_txt">처분용기로 포장</span>
-                                    </td>
-                                    <td id="td9" colspan="2" class="step09 _step">
-                                        <span class="_txt">
-                                            여기서 잠깐!<br>
-                                            인수검사를 통과하지 못하면 어쩌죠?
-                                        </span>
-                                    </td>
-                                    <td id="td8" class="step08 _step">
-                                        <div class="_image"><img src="<?php echo $url_img ?>/marble-image-03.png"></div>
-                                        <span class="_txt">인수검사 7단계</span>
-                                    </td>
-                                </tr>
-                            </table>
+                                        </td>
+                                        <td id="td3" class="step03 _step">
+                                            <div class="_txt_grp">
+                                                <span class="_label">인수검사 2단계</span>
+                                                <b class="_name">육안검사</b>
+                                            </div>
+                                        </td>
+                                        <td id="td4" class="step04 _step">
+                                            <div class="_txt_grp">
+                                                <span class="_label">인수검사 3단계</span>
+                                                <b class="_name">표면방사선률 측정</b>
+                                            </div>
+                                        </td>
+                                        <td id="td5" class="step05 _step">
+                                            <div class="_txt_grp">
+                                                <span class="_label">인수검사 4단계</span>
+                                                <b class="_name">엑스선검사</b>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="td12" class="step12 _step">
+                                            <div class="_image"><img src="<?php echo $url_img ?>/marble-image-07.png"></div>
+                                            <span class="_txt">방폐물 사일로 처분</span>
+                                        </td>
+                                        <td colspan="4" rowspan="2" class="dice_blank">
+                                            <!-- 주사위 굴리기 버튼 -->
+                                            <div id="btn_dice" class="btn_dice_wrap">
+                                                <img src="<?php echo $url_img; ?>/img_dice.png" class="img_dice">
+                                                <span class="dice_txt">주사위<br>굴리기</span>
+                                                <!-- <button id="text_roll" alt="주사위 던지기"></button> -->
+                                            </div>
+                                            <!-- 3D 주사위 -->
+                                            <div id="the_dice" class="dice">
+                                                <div id="cube" class="">
+                                                    <div class="side front">
+                                                        <span class="dot dot1"></span>
+                                                    </div>
+                                                    <div class="inner front"></div>
+                                                    <div class="side back">
+                                                        <span class="dot dot1"></span>
+                                                        <span class="dot dot2"></span>
+                                                        <span class="dot dot3"></span>
+                                                    </div>
+                                                    <div class="inner back"></div>
+                                                    <div class="side right">
+                                                        <span class="dot dot1"></span>
+                                                        <span class="dot dot2"></span>
+                                                    </div>
+                                                    <div class="inner right"></div>
+                                                    <div class="side left">
+                                                        <span class="dot dot1"></span>
+                                                        <span class="dot dot2"></span>
+                                                    </div>
+                                                    <div class="inner left"></div>
+                                                    <!-- 위에선 보이지 않는 옆면 -->
+                                                    <div class="side top">
+                                                        <span class="dot dot1"></span>
+                                                    </div>
+                                                    <div class="inner top"></div>
+                                                    <div class="side bottom">
+                                                        <span class="dot dot1"></span>
+                                                        <span class="dot dot2"></span>
+                                                        <span class="dot dot3"></span>
+                                                    </div>
+                                                    <div class="inner bottom"></div>
+                                                </div>
+                                                <div class="box_shadow"></div>
+                                            </div>
+                                        </td>
+                                        <td id="td6" class="step06 _step">
+                                            <div class="_txt_grp">
+                                                <span class="_label">인수검사 5단계</span>
+                                                <b class="_name">표면오염검사</b>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="td11" rowspan="2" class="step11 _step">
+                                            <div class="_image"><img src="<?php echo $url_img ?>/marble-image-06.png"></div>
+                                            <span class="_txt">
+                                                여기서 잠깐!<br>동굴처분시설은<br>안전한가요?
+                                            </span>
+                                        </td>
+                                        <td id="td7" class="step07 _step" rowspan="2">
+                                            <div class="_txt_grp">
+                                                <span class="_label">인수검사 6단계</span>
+                                                <b class="_name">드럼핵종분석</b>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="td10" class="step10 _step">
+                                            <div class="_image"><img src="<?php echo $url_img ?>/marble-image-05.png"></div>
+                                            <span class="_txt">동굴처분시설로 운반</span>
+                                        </td>
+                                        <td id="td9" class="step09 _step">
+                                            <div class="_image"><img src="<?php echo $url_img ?>/marble-image-04.png"></div>
+                                            <span class="_txt">처분용기로 포장</span>
+                                        </td>
+                                        <td id="td8" colspan="2" class="step08 _step">
+                                            <span class="_txt">
+                                                여기서 잠깐!<br>
+                                                인수검사를 통과하지 못하면 어쩌죠?
+                                            </span>
+                                        </td>
+                                        <!-- <td id="td8" class="step08 _step">
+                                            <div class="_image"><img src="<?php echo $url_img ?>/marble-image-03.png"></div>
+                                            <span class="_txt">인수검사 7단계</span>
+                                        </td> -->
+                                    </tr>
+                                </table>
+                            </div>
+                            <!-- /.marble_inner -->
                         </div>
+                        <!-- /.marble -->
                     </div>
                 </section>
                 <!-- /.방폐마블 영역 -->
@@ -1565,7 +1600,7 @@
                             <img src="<?php echo $url_img; ?>/title_quiz.png" alt="퀴즈이벤트">
                             <p class="_description">
                             아래 제시되는 내용의 빈칸을 채워주세요.<br>
-                            코라드 M방폐장 가이드 투어 영상을 보시면 정답을 알 수 있어요.
+                            한국원자력환경공단 M방폐장 가이드 투어 영상을 보시면 정답을 알 수 있어요.
                             </p>
                         </div>
                         <div class="quiz_grp">
@@ -1575,12 +1610,11 @@
                                     <div class="text_grp">
                                         <h3>다음 빈칸에 들어갈 정답은 무엇일까요?</h3>
                                         <div class="_txt">
-                                            병원, 연구소, 원자력발전소 등에서 발생한 중 · 저준위 방사선폐기물은
-                                            한국원자력환경공단의 경주 방사성폐기물 처분시설의
+                                            병원, 연구소, 원자력발전소 등에서 발생한 중·저준위 방사성폐기물은
+                                            경주 중·저준위 방사성폐기물 처분시설의
                                             <ul class="blank_grp"><li></li><li></li><li></li><li></li><li></li><li></li></ul>에서 처분적합성을 검사한 후
-                                            폐기물을 최종처분하는 <ul class="blank_grp"><li></li><li></li><li></li><li></li><li></li><li></li></ul>의 사일로로 옮겨져
-                                            방사능물질이 에너지를 내지 않아 안전해질 때까지
-                                            인간으로부터 완전히 격리 및 안치됩니다.
+                                            방사성폐기물을 최종처분하는 <ul class="blank_grp"><li></li><li></li><li></li><li></li><li></li><li></li></ul>의 사일로로 옮겨져
+                                            방사성폐기물을 인간 생활권으로부터 영구히 격리시킵니다.
                                         </div>
                                     </div>
                                 </div>
@@ -1589,26 +1623,26 @@
                                         <div class="bubble bubble_answer">정답</div>
                                         <div class="_answer_grp _answer01">
                                             <ul class="blank_grp">
-                                                <li><input class="_blank" name="_blank1" /></li>
-                                                <li><input class="_blank" name="_blank2" /></li>
-                                                <li><input class="_blank" name="_blank3" /></li>
-                                                <li><input class="_blank" name="_blank4" /></li>
-                                                <li><input class="_blank" name="_blank5" /></li>
-                                                <li><input class="_blank" name="_blank6" /></li>
+                                                <li><input class="_blank inputs" name="_blank1" maxlength="1" /></li>
+                                                <li><input class="_blank inputs" name="_blank2" maxlength="1" /></li>
+                                                <li><input class="_blank inputs" name="_blank3" maxlength="1" /></li>
+                                                <li><input class="_blank inputs" name="_blank4" maxlength="1" /></li>
+                                                <li><input class="_blank inputs" name="_blank5" maxlength="1" /></li>
+                                                <li><input class="_blank inputs" name="_blank6" maxlength="1" /></li>
                                             </ul>
                                         </div>
                                         <div class="_answer_grp _answer02">
                                             <ul class="blank_grp">
-                                                <li><input class="_blank" name="_blank7" /></li>
-                                                <li><input class="_blank" name="_blank8" /></li>
-                                                <li><input class="_blank" name="_blank9" /></li>
-                                                <li><input class="_blank" name="_blank10" /></li>
-                                                <li><input class="_blank" name="_blank11" /></li>
-                                                <li><input class="_blank" name="_blank12" /></li>
+                                                <li><input class="_blank inputs" name="_blank7" maxlength="1"/></li>
+                                                <li><input class="_blank inputs" name="_blank8" maxlength="1"/></li>
+                                                <li><input class="_blank inputs" name="_blank9" maxlength="1"/></li>
+                                                <li><input class="_blank inputs" name="_blank10" maxlength="1"/></li>
+                                                <li><input class="_blank inputs" name="_blank11" maxlength="1"/></li>
+                                                <li><input class="_blank inputs" name="_blank12" maxlength="1"/></li>
                                             </ul>
                                         </div>
                                         <!----------- 2020.10.05 수정 ------------>
-                                        <button type="button" class="btn btn_submit" data-target="#quiz_submit_pop" data-toggle="modal">정답 제출하기</button>
+                                        <button type="button" id="answer_submit" class="btn btn_submit" data-target="#quiz_submit_pop" data-toggle="modal">정답 제출하기</button>
                                         <!----------- 2020.10.05 수정 ------------>
                                     </form>
                                 </div>
@@ -1617,18 +1651,18 @@
                                 <div class="row_container">
                                     <div class="col_1_2 _txt">
                                         <b>참여기간</b>
-                                        <p>2020년 09월 01일 ~ 09월 20일</p>
+                                        <p>2020년 11월 6일(금) ~ 30일(월)</p>
                                     </div>
                                     <div class="col_1_2 _txt">
                                         <b>당첨자 발표</b>
-                                        <p>2020년 09월 25일</p>
+                                        <p>2020년 12월 8일(화)</p>
                                     </div>
                                 </div>
                                 <div class="row_container">
                                     <div class="col_1_2 _txt">
                                         <b>참여방법</b>
                                         <p>
-                                        ① 코라드 M방폐장 가이드 투어 영상보기<br>
+                                        ① 한국원자력환경공단 M방폐장 가이드 투어 영상보기<br>
                                         ② 문제를 읽고 여섯글자 빈칸 두 가지 채우기<br>
                                         ③ 정답 제출하기 및 개인정보수집 및 활용동의로 응모완료</p>
                                     </div>
@@ -1657,27 +1691,28 @@
                 <!-- SNS공유 영역 -->
                 <section id="anchor-share" class="content_section share_wrap">
                     <div class="text">
-                    코라드 M방폐장 투어에 많은 분들이 참여할 수 있도록<br>
+                    한국원자력환경공단 M방폐장 투어에 많은 분들이 참여할 수 있도록<br>
                     SNS를 통해 많이 공유해주세요!
                     </div>
                     <ul class="sns_grp">
                         <li class="item kakao">
-                            <div class="sns">카카오톡</div>
+                            <div class="sns btn_kakao" id="kakao-link-btn">카카오톡</div>
                         </li>
                         <li class="item fb">
-                            <div class="sns">페이스북</div>
+                            <div class="sns btn_fb">페이스북</div>
                         </li>
                         <li class="item blog">
-                            <div class="sns">블로그</div>
+                            <div class="sns btn_blog">블로그</div>
                         </li>
                         <li class="item twitter">
-                            <div class="sns">트위터</div>
+                            <div class="sns btn_twitter">트위터</div>
                         </li>
                         <li class="item line">
-                            <div class="sns">라인</div>
+                            <div class="sns btn_line">라인</div>
                         </li>
                         <li class="item copylink">
-                            <div class="sns">URL 복사</div>
+                            <div class="sns btn_copy">URL 복사</div>
+                            <input type="text" style="position: absolute; left: -1000px; top: -1000px" id="ShareUrl"/>
                         </li>
                     </ul>
                 </section>
@@ -1761,16 +1796,16 @@
                             <span aria-hidden="true">×</span>
                         </button>
                         <div class="modal-body">
-                            <form >
+                            <form id="registform" method="post">
                                 <div class="input_grp">
                                     <div class="_title">이벤트 참여하기</div>
                                     <div class="row_container">
                                         <label >이름</label>
-                                        <input type="text" class="for_name" placeholder="이름을 입력해주세요."/>
+                                        <input type="text" class="for_name" placeholder="이름을 입력해주세요." name="name"/>
                                     </div>
                                     <div class="row_container">
                                         <label >휴대폰 번호</label>
-                                        <input type="text" class="for_mobile" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="휴대폰 번호를 입력해주세요."/>
+                                        <input type="text" class="for_mobile" name="cel_no" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="휴대폰 번호를 입력해주세요."/>
                                     </div>
                                 </div>
                                 <div class="agreement_txt">
@@ -1931,7 +1966,7 @@
                                     ① 이 개인정보 처리방침은 2020. 10. 30. 부터 적용됩니다. 
                                 </div>
                                 <div class="_agreement">
-                                    <input type="checkbox" class="checkbox"> <span>개인정보 처리방침을 읽고 이에 동의합니다.</span>
+                                    <input type="checkbox" class="checkbox" name="agree"> <span>개인정보 처리방침을 읽고 이에 동의합니다.</span>
                                 </div>
                                 <button class="btn btn_submit">제출하기</button>
                             </form>
@@ -1946,4 +1981,161 @@
     </div>
     <!-- /.body_container -->
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script>
+    $(function() {
+        $(".inputs").on("keyup", function () {
+
+            var maxlength = $(this).attr("maxlength");
+            var thisEq = $(".inputs").index(this);
+            var byte = byteCheck($(this));
+
+            if (byte > maxlength ) {
+                $(".inputs").eq(thisEq+1).focus();
+                return false;
+            }
+        });
+
+        function byteCheck(el){
+            var codeByte = 0;
+            for (var idx = 0; idx < el.val().length; idx++) {
+                var oneChar = escape(el.val().charAt(idx));
+                // console.log( "oneChar" + oneChar.length);
+                if ( oneChar.length == 1 ) {
+                    //codeByte ++;
+                    codeByte += 2;
+                } else if (oneChar.indexOf("%u") != -1) {
+                    //codeByte += 2;
+                    codeByte ++;
+                } else if (oneChar.indexOf("%") != -1) {
+                    codeByte ++;
+                }
+            }
+            return codeByte;
+        }
+
+        $("#answer_submit").on("click", function() {
+
+            var answer = "";
+            $('.inputs').each(function(index) {
+                answer += $(".inputs").eq(index).val();
+            });
+
+            if (answer != "지상지원시설동굴처분시설" ) {
+                alert("정답이 아닙니다. 영상을 다시 한번 확인해주십시오");
+                return false;
+            }
+
+            $('#quiz_submit_pop').modal('show');
+        });
+
+        if($("#registform").length > 0) {
+
+            $("#registform").validate({
+                submitHandler: function(form, event) {
+
+                    if ($("input[name='name']").val()=='') {
+                        alert("이름을 입력하세요.");
+                        return false;
+                    }
+                    if ($("input[name='cel_no']").val()=='') {
+                        alert("휴대폰번호를 입력하세요.");
+                        return false;
+                    }
+                    if (!$("input:checkbox[name='agree']").is(':checked')) {
+                        alert("개인정보 처리방침에 동의하셔야 합니다.");
+                        return false;
+                    }
+
+                    $.ajax({
+                        url: './exec.php' ,
+                        type: "POST",
+                        data: $('#registform').serialize(),
+                        dataType: "json",
+                        success: function( response ) {
+
+                            if (response.success==true) {
+                                alert("이벤트 참여가 완료되었습니다.");
+                                location.reload();
+                                return;
+                            } else {
+                                alert(response.message);
+                                return;
+                            }
+                        },
+                        error:function(jqXHR,status,errorThrown ){
+                            alert("오류가 발생했습니다.");
+                        }
+                    });
+                }
+            });
+        };
+
+        $(".btn_fb").on("click", function(e){
+            share_facebook();
+            e.preventDefault();
+        });
+        $(".btn_twitter").click(function(e){
+            window.open("https://twitter.com/share?text=한국원자력환경공단 M방폐장 랜선투어에 참여해보세요!&url=" + location.href);
+            didit = true;
+            e.preventDefault();
+        });
+        // $(".btn_kakao").click(function(e){
+        //     // window.open("https://story.kakao.com/share?url=" + location.href);
+        //     // didit = true;
+        //
+        //     e.preventDefault();
+        // });
+        $(".btn_blog").click(function(e) {
+            window.open("http://blog.naver.com/openapi/share?url=" + location.href + "&title=한국원자력환경공단");
+           e.preventDefault();
+        });
+        $(".btn_line").click(function(e){
+            var url = "http://line.me/R/msg/text/?" + encodeURIComponent("한국원자력환경공단 M방폐장 랜선투어\n한국원자력환경공단 M방폐장 랜선투어에 참여해보세요!\n" + location.href);
+            window.open(url);
+            e.preventDefault();
+        });
+        $(".btn_copy").click(function(e){
+            var obShareUrl = document.getElementById("ShareUrl");
+            obShareUrl.value = location.href;
+            obShareUrl.select();
+            document.execCommand("copy");
+            obShareUrl.blur();
+            alert("URL이 복사되었습니다");
+        });
+
+        function share_facebook() {
+            var ShareUrl = location.href;
+            newwindow = window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(ShareUrl),'facebookpopup', 'toolbar=0, status=0, width=626, height=436');
+            if (window.focus) {newwindow.focus();}
+        };
+
+
+    });
+
+    Kakao.init('59eeafda9612dfacdda09ccc07cc3b2c');
+    Kakao.Link.createDefaultButton({
+        container: '#kakao-link-btn',
+        objectType: 'feed',
+        content: {
+            title: '한국원자력환경공단',
+            description: '한국원자력환경공단 M방폐장 랜선투어에 참여해보세요!',
+            imageUrl: location.href + '/public/img/sns-thumb.jpg',
+            link: {
+                mobileWebUrl: location.href,
+                webUrl: location.href
+            }
+        },
+        buttons: [
+            {
+                title: '웹으로 보기',
+                link: {
+                    mobileWebUrl: location.href,
+                    webUrl: location.href
+                }
+            }
+        ]
+    });
+</script>
 </html>

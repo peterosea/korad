@@ -116,9 +116,10 @@ $(document).ready(function(){
     ////.End 방폐장 맵/타임라인 스크립트
 
     /////////// 마블 보드게임
-    const top_of_ratio = [0, 0, 0, 0, 0, 0, 25, 50, 75, 75, 75, 75, 50, 25]; // 말의 X좌표
-    const left_of_ratio = [0, 16.67, 33.34, 50, 66.67, 83.34, 83.34, 83.34, 83.34, 50, 33.34, 16.67, 0, 0]; // 말의 Y좌표
+    const top_of_ratio = [0, 0, 0, 0, 0, 0, 25, 65, 75, 75, 75, 50, 25]; // 말의 X좌표
+    const left_of_ratio = [0, 16.67, 33.34, 50, 66.67, 83.34, 83.34, 83.34, 50, 33.34, 16.67, 0, 0]; // 말의 Y좌표
     var sum_of_die = 0;
+    var all_of_die = 12;
 
     function play_marble(yRand) {
         setTimeout(move_pieces, 2000, yRand);
@@ -129,10 +130,10 @@ $(document).ready(function(){
         var num_of_die = (yRand / 90) + (minus_val);
         sum_of_die += num_of_die;
         // 14는 골인임
-        if( sum_of_die > 13 ) {
+        if( sum_of_die > all_of_die ) {
             $(".marker").css("top", "-10px");
             $(".marker").css("left", "20px");
-            get_board_html(14);
+            get_board_html(13);
             var popupInterval = setTimeout(function () {
                 $('#marble_pop').modal('show');
             }, 500);
@@ -195,7 +196,7 @@ $(document).ready(function(){
     // 입체 주사위 다시 클릭했을 때
     cube.addEventListener('click', function(e){
         e.preventDefault();
-        if(sum_of_die > 13) {
+        if(sum_of_die > all_of_die) {
             this.removeEventListener('click',arguments.callee);
             this.classList.add('finish');
         }

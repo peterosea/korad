@@ -1,4 +1,7 @@
-<h2 class="_title">인수검사 6단계</h2>
+<h2 class="_title">
+    인수검사 6단계
+    <img src="public/img/marble-image-02-6.png">
+</h2>
 <p class="_description">
     <b>인수검사 6단계 - 핵종분석</b>
     드럼 안에 어떤 방사성 핵종이 있는지 검사합니다.<br>
