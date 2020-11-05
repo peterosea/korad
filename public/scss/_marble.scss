@@ -81,13 +81,17 @@
             //     // display:none;
             //     width: 780px;
             // }
+            tr:nth-child(3), tr:nth-child(4) {
+                height: 147px;
+            }
             td {
                 border-radius: 5px;
+                overflow: hidden;
                 width: 195px;
                 height: 146px;
                 text-align: center;
                 position: relative;
-                background-position: center 40px;
+                background-position: center top;
                 background-repeat: no-repeat;
                 background-size: auto;
                 transition: all 0.3s;
@@ -153,15 +157,40 @@
                 }
                 ._txt {
                     font-weight: bold;
-                    font-size: 18px;
-                    position: absolute;
-                    bottom: 23px;
-                    display: block;
-                    text-align: center;
                     width: 100%;
-                    z-index: 1;
+                    color: #fff;
+                    height: auto;
+                    font-size: 18px;
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: center;
                     @include respond-to('lg'){
                         font-size: 15px;
+                    }
+                }
+                ._txt_grp {
+                    bottom: 0;
+                    top:96px;
+                    display: flex;
+                    justify-content: center;
+                    background-color: #116339;
+                    flex-direction: column;
+                    align-items: center;
+                    font-weight: bold;
+                    position: absolute;
+                    width: 100%;
+                    z-index: 1;
+                    color: #fff;
+                    height: 50px;
+                    ._label {
+                        font-size: 13px;
+                        opacity: 0.5;
+                        line-height: 1.2em;
+                    }
+                    ._name {
+                        font-size: 17px;
+                        line-height: 1.2em;
+                        margin-top: 2px;
                     }
                 }
                 ._start {
@@ -184,120 +213,81 @@
                 &.step01 {
                     background-color: #8066CC;
                     ._image {
-                        margin-top: -95px;
                         @include respond-to('lg'){
                             margin-top: -50px;
                         }
-                    }
-                    ._txt {
-                        color: #fff;
                     }
                 }
                 &.step02 {
                     background-color:rgba(11, 138, 72, 0.2);
-                    background-image: url(#{$urlImg}/marble_num01.png);
-                    ._image {
-                        margin-top: -100px;
-                        @include respond-to('lg'){
-                            margin-top: -50px;
-                        }
-                    }
+                    background-image: url(#{$urlImg}/marble-image-02-1.png);
                 }
                 &.step03 {
                     background-color:rgba(11, 138, 72, 0.3);
-                    background-image: url(#{$urlImg}/marble_num02.png);
+                    background-image: url(#{$urlImg}/marble-image-02-2.png);
                 }
                 &.step04 {
                     background-color:rgba(11, 138, 72, 0.4);
-                    background-image: url(#{$urlImg}/marble_num03.png);
+                    background-image: url(#{$urlImg}/marble-image-02-3.png);
                 }
                 &.step05 {
                     background-color:rgba(11, 138, 72, 0.5);
-                    background-image: url(#{$urlImg}/marble_num04.png);
+                    background-image: url(#{$urlImg}/marble-image-02-4.png);
                 }
                 &.step06 {
                     background-color:rgba(11, 138, 72, 0.6);
-                    background-image: url(#{$urlImg}/marble_num05.png);
-                    ._txt {
-                        color: #fff;
-                    }
+                    background-image: url(#{$urlImg}/marble-image-02-5.png);
                 }
                 &.step07 {
+                    height: 292px;
                     background-color:rgba(11, 138, 72, 0.8);
-                    background-image: url(#{$urlImg}/marble_num06.png);
-                    ._txt {
-                        color: #fff;
+                    background-image: url(#{$urlImg}/marble-image-02-6.png);
+                    background-position: center 25%;
+                    ._txt_grp {
+                        top: 217px;
+                        height: 80px;
                     }
                 }
+                // &.step08 {
+                //     background-color:rgba(11, 138, 72, 1);
+                //     background-image: url(#{$urlImg}/marble_num07.png);
+                //     ._image {
+                //         margin-top: -85px;
+                //         @include respond-to('lg'){
+                //             margin-top:-50px;
+                //         }
+                //     }
+                //     ._txt {
+                //         color: #fff;
+                //     }
+                // }
                 &.step08 {
-                    background-color:rgba(11, 138, 72, 1);
-                    background-image: url(#{$urlImg}/marble_num07.png);
-                    ._image {
-                        margin-top: -85px;
-                        @include respond-to('lg'){
-                            margin-top:-50px;
-                        }
-                    }
-                    ._txt {
-                        color: #fff;
-                    }
-                }
-                &.step09 {
                     width: auto;
                     background-color:#0084e6;
                     background-image: url(#{$urlImg}/marble-pattern-01.png);
                     background-position: center center;
                     background-repeat: repeat;
-                    ._txt {
-                        color: #fff;
-                        position: relative;
-                        bottom: auto;
-                    }
+                }
+                &.step09 {
+                    background-color: #e75b93;
                 }
                 &.step10 {
-                    background-color: #e75b93;
-                    ._image {
-                        margin-top: -93px;
-                        @include respond-to('lg'){
-                            margin-top: -50px;
-                        }
-                    }
-                    ._txt {
-                        color:#fff;
-                    }
+                    background-color: #a0a0a0;
                 }
                 &.step11 {
-                    background-color: #a0a0a0;
-                    ._image {
-                        margin-top: -94px;
-                        @include respond-to('lg'){
-                            margin-top: -50px;
-                        }
-                    }
-                    ._txt {
-                        color:#fff;
-                    }
-                }
-                &.step12 {
-                    height: auto;
-                    background-image: url(#{$urlImg}/marble-pattern-01.png);
+                    height: 292px;
+                    background-image: url(#{$urlImg}/marble-pattern-02.png);
                     background-color: #1dccea;
                     background-position: center center;
                     background-repeat: repeat;
                     ._txt {
-                        color:#fff;
-                        position: relative;
-                        bottom: auto;
-                        margin-top: 20px;
+                        margin-top: 40px;
                     }
                 }
-                &.step13 {
+                &.step12 {
                     background-color: #dfd7c8;
-                    ._image {
-                        margin-top: -60px;
-                        @include respond-to('lg'){
-                            margin-top: -40px;
-                        }
+                    ._txt {
+                        color:#222;
                     }
                 }
             }

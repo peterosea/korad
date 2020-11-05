@@ -1,6 +1,6 @@
 <h2 class="_title">
     인수검사 1단계
-    <img src="public/img/marble-image-02.png">
+    <img src="public/img/marble-image-02-1.png">
 </h2>
 <p class="_description">
     <b>인수검사 1단계 – 중량검사</b>
