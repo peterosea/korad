@@ -789,6 +789,77 @@ section.site_title_wrap .video_wrap.youtube_wrap {
   }
 }
 
+.content_section.vrvideo_wrap {
+  background-color: #a0d1db;
+}
+
+.content_section.vrvideo_wrap .section_inner {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .content_section.vrvideo_wrap .section_inner {
+    padding: 0 10px;
+  }
+}
+
+.content_section.vrvideo_wrap .title_wrap {
+  margin: 100px 0 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content_section.vrvideo_wrap .title_wrap ._description {
+  line-height: 1.6em;
+  text-align: center;
+  color: #401ba2;
+  margin-bottom: 0;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+@media (max-width: 992px) {
+  .content_section.vrvideo_wrap .title_wrap {
+    width: 90%;
+  }
+  .content_section.vrvideo_wrap .title_wrap img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content_section.vrvideo_wrap .title_wrap {
+    margin: 70px 0 30px;
+  }
+}
+
+.content_section.vrvideo_wrap .video_wrap {
+  margin-bottom: 120px;
+}
+
+@media (max-width: 768px) {
+  .content_section.vrvideo_wrap .video_wrap {
+    margin-bottom: 70px;
+  }
+}
+
 .content_section.yeskorad_wrap {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
