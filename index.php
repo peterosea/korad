@@ -1379,6 +1379,24 @@
                     </div>
                     <!-- /.지도 일러스트 영역 -->
                 </section>
+                <!-- VR 영상 영역 -->
+                <section id="anchor-vrvideo" class="content_section vrvideo_wrap">
+                    <div class="section_inner">
+                        <div class="title_wrap">
+                            <img src="<?php echo $url_img; ?>/title_vrvideo.png" alt="방사성폐기물 처분 간접체험">
+                            <p class="_description">
+                            한국원자력환경공단(KORAD)에서 방사성폐기물이 어떻게 처분되고 관리되는지 궁금하셨죠?<br>
+                            방사성폐기물의 검사부터 처분까지! 아래 VR영상으로 함께 감상해볼까요?
+                            </p>
+                        </div>
+                        <div class="video_wrap youtube_wrap">
+                            <div class="video-container">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KGscmYfpTgw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /.VR 영상 영역 -->
                 <!-- /.방폐장 지도 영역 -->
                 <!-- yesKORAD 최신 영상 및 뉴스리스트 영역 -->
                 <!---section class="content_section yeskorad_wrap">
