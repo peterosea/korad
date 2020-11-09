@@ -20,10 +20,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta name="viewport" content="width=1200, user-scalable=no"> -->
-    <title>한국원자력환경공단 M방폐장 랜선투어</title>
-    <meta name="title" content="한국원자력환경공단 M방폐장 랜선투어">
-    <meta name="description" content="한국원자력환경공단은 비교적 방사능 수치가 낮은 방사성폐기물을 처분 및 관리하는 곳입니다.">
+    <title>한국원자력환경공단</title>
+    <meta name="title" content="한국원자력환경공단">
+    <meta name="description" content="한국원자력환경공단 온라인 비대면(Untact) 홍보관">
     <meta name="keywords" content="코라드, 방폐장, 방사성폐기물, 한국원자력환경공단, 랜선투어">
+    <link rel="canonical" href="https://mkorad.or.kr/">
     <link rel="shortcut icon" href="public/img/favicon.png">
         
     <script type="text/javascript" src="//code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
@@ -35,10 +36,13 @@
     <link type="text/css" rel="stylesheet" href="<?php echo $url_public; ?>/style.css" > <!-- peterosea CSS 스타일시트 -->
     <script type="text/javascript" src="<?php echo $url_public ?>/js/script.js"></script> <!-- peterosea JS 파일 -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="koradm.com"/>
+    <meta property="og:site_name" content="mkorad.or.kr"/>
     <meta property="og:title" content="한국원자력환경공단" />
-    <meta property="og:description" content="한국원자력환경공단 M방폐장 랜선투어" />
+    <meta property="og:description" content="한국원자력환경공단 온라인 비대면(Untact) 홍보관"" />
     <meta property="og:image" content="/public/img/sns-thumb.jpg" />
+    <!-- 네이버 웹마스터도구 인증 -->
+    <meta name="robots" content="index,follow">
+    <meta name="naver-site-verification" content="26b0d81c3ae8ee006d82d6898f6df5a56561b1e9" />
 </head>
 <body>
     <!-- body_container -->
@@ -1669,7 +1673,7 @@
                                 <div class="row_container">
                                     <div class="col_1_2 _txt">
                                         <b>참여기간</b>
-                                        <p>2020년 11월 6일(금) ~ 30일(월)</p>
+                                        <p>2020년 11월 10일(화) ~ 30일(월)</p>
                                     </div>
                                     <div class="col_1_2 _txt">
                                         <b>당첨자 발표</b>
