@@ -1074,6 +1074,12 @@ section.site_title_wrap .video_wrap.youtube_wrap {
   position: relative;
 }
 
+@media (max-width: 1280px) {
+  .content_section.marble_wrap .marble {
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .content_section.marble_wrap .marble {
     margin-bottom: 70px;
@@ -1121,6 +1127,12 @@ section.site_title_wrap .video_wrap.youtube_wrap {
 .content_section.marble_wrap .marble .board {
   border-collapse: separate;
   border-spacing: 3px;
+}
+
+@media (max-width: 1280px) {
+  .content_section.marble_wrap .marble .board {
+    width: 100%;
+  }
 }
 
 .content_section.marble_wrap .marble .board tr:nth-child(3), .content_section.marble_wrap .marble .board tr:nth-child(4) {
@@ -1278,10 +1290,22 @@ section.site_title_wrap .video_wrap.youtube_wrap {
   line-height: 1.2em;
 }
 
+@media (max-width: 992px) {
+  .content_section.marble_wrap .marble .board td ._txt_grp ._label {
+    font-size: 12px;
+  }
+}
+
 .content_section.marble_wrap .marble .board td ._txt_grp ._name {
   font-size: 17px;
   line-height: 1.2em;
   margin-top: 2px;
+}
+
+@media (max-width: 992px) {
+  .content_section.marble_wrap .marble .board td ._txt_grp ._name {
+    font-size: 14px;
+  }
 }
 
 .content_section.marble_wrap .marble .board td ._start {

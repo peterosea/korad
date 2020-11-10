@@ -1697,7 +1697,7 @@
                                             </div>
                                             <div class="_gift gift02">
                                                 <div class="thumb"></div>
-                                                <span>베스킨라빈스<br>쿼터 (5명)</span>
+                                                <span>배스킨라빈스<br>쿼터 (5명)</span>
                                             </div>
                                         </div>
                                     </div>
