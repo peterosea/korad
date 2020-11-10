@@ -20,8 +20,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta name="viewport" content="width=1200, user-scalable=no"> -->
-    <title>한국원자력환경공단</title>
-    <meta name="title" content="한국원자력환경공단">
+    <title>M방폐장</title>
+    <meta name="title" content="M방폐장">
     <meta name="description" content="한국원자력환경공단 온라인 비대면(Untact) 홍보관">
     <meta name="keywords" content="코라드, 방폐장, 방사성폐기물, 한국원자력환경공단, 랜선투어">
     <link rel="canonical" href="https://mkorad.or.kr/">
@@ -37,8 +37,8 @@
     <script type="text/javascript" src="<?php echo $url_public ?>/js/script.js"></script> <!-- peterosea JS 파일 -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="mkorad.or.kr"/>
-    <meta property="og:title" content="한국원자력환경공단" />
-    <meta property="og:description" content="한국원자력환경공단 온라인 비대면(Untact) 홍보관"" />
+    <meta property="og:title" content="M방폐장" />
+    <meta property="og:description" content="한국원자력환경공단 온라인 비대면(Untact) 홍보관" />
     <meta property="og:image" content="/public/img/sns-thumb.jpg" />
     <!-- 네이버 웹마스터도구 인증 -->
     <meta name="robots" content="index,follow">
@@ -87,7 +87,7 @@
                         </div>
                         <div class="welcome">한국원자력환경공단 M방폐장 랜선투어에 오신 여러분을 환영합니다!!</div>
                         <p class="description">
-                        랜선투어를 통해 여러분이 방문하실 곳은 경주 중 · 저준위 방사성폐기물 처분시설로<br>
+                        랜선투어를 통해 여러분이 방문하실 곳은 경주 중·저준위방사성폐기물 처분시설로<br>
                         원전 , 병원 , 연구기관 등에서 발생한 비교적 방사능 수치가 낮은 방사성폐기물을 처분 및 관리하는 곳입니다.
                         </p>
                         <div class="video_wrap youtube_wrap">
@@ -1466,7 +1466,7 @@
                             <img src="<?php echo $url_img; ?>/title_marble.png" alt="방폐마블">
                             <p class="_description">
                             주사위를 굴려 게임을 플레이해보세요.<br>
-                            중저준위 방사선폐기물이 안전하게 처분 및 관리되는 과정을 함께 알아봐요.
+                            중·저준위방사성폐기물이 안전하게 처분 및 관리되는 과정을 함께 알아봐요.
                             </p>
                         </div>
                         <!-- marble -->
@@ -1489,7 +1489,7 @@
                                         </td>
                                         <td id="td1" class="step01 _step">
                                             <div class="_image"><img src="<?php echo $url_img ?>/marble-image-01.png"></div>
-                                            <span class="_txt">임시저장시설</span>
+                                            <span class="_txt">인수저장시설</span>
                                         </td>
                                         <td id="td2" class="step02 _step">
                                             <div class="_txt_grp">
@@ -1632,8 +1632,8 @@
                                     <div class="text_grp">
                                         <h3>다음 빈칸에 들어갈 정답은 무엇일까요?</h3>
                                         <div class="_txt">
-                                            병원, 연구소, 원자력발전소 등에서 발생한 중·저준위 방사성폐기물은
-                                            경주 중·저준위 방사성폐기물 처분시설의
+                                            병원, 연구소, 원자력발전소 등에서 발생한 중·저준위방사성폐기물은
+                                            경주 중·저준위방사성폐기물 처분시설의
                                             <ul class="blank_grp"><li></li><li></li><li></li><li></li><li></li><li></li></ul>에서 처분적합성을 검사한 후
                                             방사성폐기물을 최종처분하는 <ul class="blank_grp"><li></li><li></li><li></li><li></li><li></li><li></li></ul>의 사일로로 옮겨져
                                             방사성폐기물을 인간 생활권으로부터 영구히 격리시킵니다.
@@ -1697,7 +1697,7 @@
                                             </div>
                                             <div class="_gift gift02">
                                                 <div class="thumb"></div>
-                                                <span>베스킨라빈스<br>쿼터파운드<br>(5명)</span>
+                                                <span>베스킨라빈스<br>쿼터 (5명)</span>
                                             </div>
                                         </div>
                                     </div>
