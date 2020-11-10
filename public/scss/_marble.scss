@@ -37,6 +37,9 @@
         padding: 5px;
         margin-bottom: 120px;
         position: relative;
+        @include respond-to('xl') {
+            width: 100%;
+        }
         @include respond-to('md') {
             margin-bottom: 70px;
             overflow: scroll;
@@ -81,6 +84,9 @@
             //     // display:none;
             //     width: 780px;
             // }
+            @include respond-to('xl') {
+                width: 100%;
+            }
             tr:nth-child(3), tr:nth-child(4) {
                 height: 147px;
             }
@@ -186,11 +192,17 @@
                         font-size: 13px;
                         opacity: 0.5;
                         line-height: 1.2em;
+                        @include respond-to('lg'){
+                            font-size: 12px;
+                        }
                     }
                     ._name {
                         font-size: 17px;
                         line-height: 1.2em;
                         margin-top: 2px;
+                        @include respond-to('lg'){
+                            font-size: 14px;
+                        }
                     }
                 }
                 ._start {
