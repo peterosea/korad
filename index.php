@@ -1758,19 +1758,19 @@
                 <div class="col_right">
                     <ul class="sns_grp">
                         <li class="item website">
-                            <a href="#" target="_blank" class="sns">웹사이트</a>
+                            <a href="https://www.korad.or.kr/korad/index.do" target="_blank" class="sns">웹사이트</a>
                         </li>
                         <li class="item fb">
-                            <a href="#" target="_blank" class="sns">페이스북</a>
+                            <a href="https://www.facebook.com/YesKORAD" target="_blank" class="sns">페이스북</a>
                         </li>
                         <li class="item blog">
-                            <a href="#" target="_blank" class="sns">블로그</a>
+                            <a href="http://blog.naver.com/yeskrmc" target="_blank" class="sns">블로그</a>
                         </li>
                         <li class="item insta">
-                            <a href="#" target="_blank" class="sns">인스타그램</a>
+                            <a href="https://www.instagram.com/yeskorad/" target="_blank" class="sns">인스타그램</a>
                         </li>
                         <li class="item youtube">
-                            <a href="#" target="_blank" class="sns">유튜브</a>
+                            <a href="https://www.youtube.com/user/YesKORAD" target="_blank" class="sns">유튜브</a>
                         </li>
                     </ul>
                 </div>
