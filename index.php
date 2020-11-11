@@ -7,6 +7,13 @@
     $url_img = $url_public . "/img"; //img 폴더 경로 설정
 ?>
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K6PDHBT');</script>
+    <!-- End Google Tag Manager -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L21YM0S5K0"></script>
     <script>
@@ -45,6 +52,10 @@
     <meta name="naver-site-verification" content="26b0d81c3ae8ee006d82d6898f6df5a56561b1e9" />
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6PDHBT"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- body_container -->
     <div class="body_container">
         <!-- 사이트 헤더 -->
@@ -110,7 +121,10 @@
                         </div>
                         <div class="_inner">
                             <ul>
-                                <li id="point1" class="point01 point">
+                                <li id="point1" class="point01 point" onclick="ga('event','코라디움', {
+                                            'event_category':'지도네비게이션',
+                                            'event_label':'코라디움'
+                                        });">
                                     <div class="pin">
                                         <!-- PIN 01 -->
                                         <svg class="pin01 _pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 60">
@@ -199,7 +213,10 @@
                                         방사성폐기물이 어떻게 관리되고 있는지 배우며 체험할 수 있는 홍보관입니다.
                                     </p>
                                 </li>
-                                <li id="point2" class="point02 point">
+                                <li id="point2" class="point02 point" onclick="ga('event','지상지원시설', {
+                                            'event_category':'지도네비게이션',
+                                            'event_label':'지상지원시설'
+                                        });">
                                     <div class="pin">
                                         <!-- PIN 02 -->
                                         <svg class="pin02 _pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 60">
@@ -572,7 +589,10 @@
                                         방사성폐기물을 인수해 보관하면서 처분하기 적합한지 검사하는 시설입니다.
                                     </p>
                                 </li>
-                                <li id="point3" class="point03 point">
+                                <li id="point3" class="point03 point" onclick="ga('event','동굴처분시설', {
+                                            'event_category':'지도네비게이션',
+                                            'event_label':'동굴처분시설'
+                                        });">
                                     <div class="pin">
                                         <!-- PIN 03 -->
                                         <svg class="pin03 _pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 60">
@@ -1523,7 +1543,10 @@
                                         </td>
                                         <td colspan="4" rowspan="2" class="dice_blank">
                                             <!-- 주사위 굴리기 버튼 -->
-                                            <div id="btn_dice" class="btn_dice_wrap">
+                                            <div id="btn_dice" class="btn_dice_wrap" onclick="ga('event','주사위굴리기', {
+                                            'event_category':'클릭이벤트',
+                                            'event_label':'주사위굴리기'
+                                        });">
                                                 <img src="<?php echo $url_img; ?>/img_dice.png" class="img_dice">
                                                 <span class="dice_txt">주사위<br>굴리기</span>
                                                 <!-- <button id="text_roll" alt="주사위 던지기"></button> -->
@@ -1664,7 +1687,10 @@
                                             </ul>
                                         </div>
                                         <!----------- 2020.10.05 수정 ------------>
-                                        <button type="button" id="answer_submit" class="btn btn_submit" data-target="#quiz_submit_pop" data-toggle="modal">정답 제출하기</button>
+                                        <button type="button" id="answer_submit" class="btn btn_submit" data-target="#quiz_submit_pop" onclick="ga('event','정답제출팝업', {
+                                            'event_category':'클릭이벤트',
+                                            'event_label':'정답제출팝업'
+                                        });" data-toggle="modal">정답 제출하기</button>
                                         <!----------- 2020.10.05 수정 ------------>
                                     </form>
                                 </div>
@@ -1718,22 +1744,40 @@
                     </div>
                     <ul class="sns_grp">
                         <li class="item kakao">
-                            <div class="sns btn_kakao" id="kakao-link-btn">카카오톡</div>
+                            <div class="sns btn_kakao" onclick="ga('event','카카오톡공유', {
+                                            'event_category':'SNS공유',
+                                            'event_label':'카카오톡공유'
+                                        });" id="kakao-link-btn">카카오톡</div>
                         </li>
                         <li class="item fb">
-                            <div class="sns btn_fb">페이스북</div>
+                            <div class="sns btn_fb" onclick="ga('event','페이스북공유', {
+                                            'event_category':'SNS공유',
+                                            'event_label':'페이스북공유'
+                                        });">페이스북</div>
                         </li>
                         <li class="item blog">
-                            <div class="sns btn_blog">블로그</div>
+                            <div class="sns btn_blog" onclick="ga('event','블로그공유', {
+                                            'event_category':'SNS공유',
+                                            'event_label':'블로그공유'
+                                        });">블로그</div>
                         </li>
                         <li class="item twitter">
-                            <div class="sns btn_twitter">트위터</div>
+                            <div class="sns btn_twitter" onclick="ga('event','트위터공유', {
+                                            'event_category':'SNS공유',
+                                            'event_label':'트위터공유'
+                                        });">트위터</div>
                         </li>
                         <li class="item line">
-                            <div class="sns btn_line">라인</div>
+                            <div class="sns btn_line" onclick="ga('event','라인공유', {
+                                            'event_category':'SNS공유',
+                                            'event_label':'라인공유'
+                                        });">라인</div>
                         </li>
                         <li class="item copylink">
-                            <div class="sns btn_copy">URL 복사</div>
+                            <div class="sns btn_copy" onclick="ga('event','URL공유', {
+                                            'event_category':'SNS공유',
+                                            'event_label':'URL공유'
+                                        });">URL 복사</div>
                             <input type="text" style="position: absolute; left: -1000px; top: -1000px" id="ShareUrl"/>
                         </li>
                     </ul>
@@ -1990,7 +2034,10 @@
                                 <div class="_agreement">
                                     <input type="checkbox" class="checkbox" name="agree"> <span>개인정보 처리방침을 읽고 이에 동의합니다.</span>
                                 </div>
-                                <button class="btn btn_submit">제출하기</button>
+                                <button onclick="ga('event','정답제출하기', {
+                                            'event_category':'클릭이벤트',
+                                            'event_label':'이벤트참여'
+                                        });" class="btn btn_submit">제출하기</button>
                             </form>
                         </div>
                     </div>
