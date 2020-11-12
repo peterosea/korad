@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
 <!-- URL 경로 설정 -->
-<?php 
+<?php
+    if(!$_SERVER['SERVER_NAME']=='mkorad.or.kr' || !isset($_SERVER["HTTPS"])) {
+        header('Location: https://mkorad.or.kr');
+    }
+
     $url_public = "public"; //Public 폴더 경로 설정
     $url_js = $url_public . "/js"; //js 폴더 경로 설정
     $url_img = $url_public . "/img"; //img 폴더 경로 설정
@@ -52,10 +56,6 @@
     <meta name="naver-site-verification" content="26b0d81c3ae8ee006d82d6898f6df5a56561b1e9" />
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6PDHBT"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <!-- body_container -->
     <div class="body_container">
         <!-- 사이트 헤더 -->
@@ -99,7 +99,7 @@
                         <div class="welcome">한국원자력환경공단 M방폐장 랜선투어에 오신 여러분을 환영합니다!!</div>
                         <p class="description">
                         랜선투어를 통해 여러분이 방문하실 곳은 경주 중·저준위방사성폐기물 처분시설로<br>
-                        원전 , 병원 , 연구기관 등에서 발생한 비교적 방사능 수치가 낮은 방사성폐기물을 처분 및 관리하는 곳입니다.
+                        원전, 병원, 연구기관 등에서 발생한 비교적 방사능 수치가 낮은 방사성폐기물을 처분 및 관리하는 곳입니다.
                         </p>
                         <div class="video_wrap youtube_wrap">
                             <div class="video-container">
@@ -1403,6 +1403,7 @@
                     </div>
                     <!-- /.지도 일러스트 영역 -->
                 </section>
+                <!-- /.방폐장 지도 영역 -->
                 <!-- VR 영상 영역 -->
                 <section id="anchor-vrvideo" class="content_section vrvideo_wrap">
                     <div class="section_inner">
@@ -1421,7 +1422,6 @@
                     </div>
                 </section>
                 <!-- /.VR 영상 영역 -->
-                <!-- /.방폐장 지도 영역 -->
                 <!-- yesKORAD 최신 영상 및 뉴스리스트 영역 -->
                 <!---section class="content_section yeskorad_wrap">
                     <div class="title_wrap">
@@ -1645,7 +1645,7 @@
                             <img src="<?php echo $url_img; ?>/title_quiz.png" alt="퀴즈이벤트">
                             <p class="_description">
                             아래 제시되는 내용의 빈칸을 채워주세요.<br>
-                            한국원자력환경공단 M방폐장 가이드 투어 영상을 보시면 정답을 알 수 있어요.
+                            코라드 M방폐장 가이드 투어 영상을 보시면 정답을 알 수 있어요.
                             </p>
                         </div>
                         <div class="quiz_grp">
@@ -1710,7 +1710,7 @@
                                     <div class="col_1_2 _txt">
                                         <b>참여방법</b>
                                         <p>
-                                        ① 한국원자력환경공단 M방폐장 가이드 투어 영상보기<br>
+                                        ① 코라드 M방폐장 가이드 투어 영상보기<br>
                                         ② 문제를 읽고 여섯글자 빈칸 두 가지 채우기<br>
                                         ③ 정답 제출하기 및 개인정보수집 및 활용동의로 응모완료</p>
                                     </div>
@@ -1844,15 +1844,12 @@
                             <span aria-hidden="true">×</span>
                         </button>
                         <div class="modal-body">
-                            <div class="_inner">
                             <!-- 콘텐트는 /marble 폴더안의 php 파일에서 로드 됨 -->
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- /.마블 보드게임 설명 팝업 -->
-            
             <!----------- 2020.10.05 추가 ------------>
             <!-- 퀴즈 제출하기 팝업 -->
             <div class="modal fade in quiz_submit_pop" id="quiz_submit_pop" aria-hidden="false" role="dialog" tabindex="-1">
@@ -1867,11 +1864,11 @@
                                     <div class="_title">이벤트 참여하기</div>
                                     <div class="row_container">
                                         <label >이름</label>
-                                        <input type="text" class="for_name" placeholder="이름을 입력해주세요." name="name"/>
+                                        <input type="text" class="for_name" placeholder="이름을 입력해주세요." name="name" tabindex="1"/>
                                     </div>
                                     <div class="row_container">
                                         <label >휴대폰 번호</label>
-                                        <input type="text" class="for_mobile" name="cel_no" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="휴대폰 번호를 입력해주세요."/>
+                                        <input type="text" class="for_mobile" name="cel_no" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="휴대폰 번호를 입력해주세요." tabindex="2"/>
                                     </div>
                                 </div>
                                 <div class="agreement_txt">
@@ -2032,12 +2029,12 @@
                                     ① 이 개인정보 처리방침은 2020. 10. 30. 부터 적용됩니다. 
                                 </div>
                                 <div class="_agreement">
-                                    <input type="checkbox" class="checkbox" name="agree"> <span>개인정보 처리방침을 읽고 이에 동의합니다.</span>
+                                    <input type="checkbox" class="checkbox" name="agree" tabindex="3"> <span>개인정보 처리방침을 읽고 이에 동의합니다.</span>
                                 </div>
                                 <button onclick="ga('event','정답제출하기', {
                                             'event_category':'클릭이벤트',
                                             'event_label':'이벤트참여'
-                                        });" class="btn btn_submit">제출하기</button>
+                                        });" class="btn btn_submit" tabindex="4">제출하기</button>
                             </form>
                         </div>
                     </div>
@@ -2146,7 +2143,7 @@
             e.preventDefault();
         });
         $(".btn_twitter").click(function(e){
-            window.open("https://twitter.com/share?text=한국원자력환경공단 M방폐장 랜선투어에 참여해보세요!&url=" + location.href);
+            window.open("https://twitter.com/share?text=코라드 M방폐장 랜선투어에 참여해보세요!&url=" + location.href);
             didit = true;
             e.preventDefault();
         });
@@ -2161,7 +2158,7 @@
            e.preventDefault();
         });
         $(".btn_line").click(function(e){
-            var url = "http://line.me/R/msg/text/?" + encodeURIComponent("한국원자력환경공단 M방폐장 랜선투어\n한국원자력환경공단 M방폐장 랜선투어에 참여해보세요!\n" + location.href);
+            var url = "http://line.me/R/msg/text/?" + encodeURIComponent("코라드 M방폐장 랜선투어\n코라드 M방폐장 랜선투어에 참여해보세요!\n" + location.href);
             window.open(url);
             e.preventDefault();
         });
@@ -2189,7 +2186,7 @@
         objectType: 'feed',
         content: {
             title: '한국원자력환경공단',
-            description: '한국원자력환경공단 M방폐장 랜선투어에 참여해보세요!',
+            description: '코라드 M방폐장 랜선투어에 참여해보세요!',
             imageUrl: location.href + '/public/img/sns-thumb.jpg',
             link: {
                 mobileWebUrl: location.href,
