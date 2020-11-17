@@ -2049,6 +2049,16 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
 <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<!-- Start Script for IFDO -->
+<script type='text/javascript'>
+var _NB_gs = 'wlog.ifdo.co.kr'; 
+var _NB_MKTCD = 'NVA2203202240';
+var _NB_APPVER=''; /* 하이브리드 앱 버전 */
+(function(a,b,c,d,e){var f;f=b.createElement(c),g=b.getElementsByTagName(c)[0];f.async=1;f.src=d;
+f.setAttribute('charset','utf-8');
+g.parentNode.insertBefore(f,g)})(window,document,'script','//script.ifdo.co.kr/jfullscript.js');	
+</script>
+<!-- End Script for IFDO -->
 <script>
     $(function() {
         $(".inputs").on("keyup", function () {
